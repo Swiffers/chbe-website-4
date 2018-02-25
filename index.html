@@ -19,19 +19,19 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <!-- Material Design Bootstrap -->
     <link href="css/mdb.min.css" rel="stylesheet" />
+    <!-- BC-Font -->
+    <link href="css/bc-font.css" rel="stylesheet" />
     <!-- Custom styles -->
     <link href="css/style.css" rel="stylesheet" />
+    <!-- Colors -->
+    <link href="css/colors.css" rel="stylesheet" />
 </head>
 
 <body>
-
-    <!--Main Navigation-->
     <header>
-
-        <!--Navbar-->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
-            <div class="container">
-                <a class="navbar-brand" href="#">
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+            <div class="container smooth-scroll">
+                <a class="navbar-brand" href="#introduction">
                     <img class="h-2em" src="img/wfavicon.png" />
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7"
@@ -39,41 +39,38 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
-                    <ul class="navbar-nav mr-auto">
+                    <ul id="navbar-scrollspy" class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <i class="fas fa-home"></i>
-                                Introduction
+                            <a class="nav-link active" href="#presentation">
+                                <i class="fal fa-user-alt"></i> Presentation
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <i class="fas fa-user-alt"></i>
-                                Presentation
+                            <a class="nav-link" href="#experiences">
+                                <i class="fal fa-building"></i> Experiences
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <i class="fas fa-building"></i>
-                                Experiences
+                            <a class="nav-link" href="#education">
+                                <i class="fal fa-graduation-cap"></i> Education
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <i class="fas fa-graduation-cap"></i>
-                                Education
+                            <a class="nav-link" href="#skills">
+                                <i class="fal fa-code"></i> Skills
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <i class="fas fa-code"></i>
-                                Skills
+                            <a class="nav-link" href="#projects">
+                                <i class="fal fa-desktop"></i> Projects
                             </a>
                         </li>
+                        
+                    </ul>
+                    <ul class="navbar-nav ml-auto nav-flex-icons">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <i class="fas fa-envelope"></i>
-                                Contact
+                            <a class="nav-link" href="#contact">
+                                <i class="fal fa-envelope"></i> Contact me!
                             </a>
                         </li>
                     </ul>
@@ -81,8 +78,7 @@
             </div>
         </nav>
 
-        <!--Intro Section-->
-        <section class="view intro custom-gradient">
+        <section id="introduction" class="view intro custom-gradient">
             <div class="full-bg-img">
                 <div class="container flex-center">
                     <div class="w-100 h-75 d-block">
@@ -107,25 +103,344 @@
                         <div id="typed-render" class="text-center h3 m-3"></div>
                     </div>
                 </div>
-                
             </div>
             <div id="typed-strings">
                 <p>I'm Bertrand Choubert.</p>
                 <p>I'm a French CS Engineer.</p>
                 <p>I'm a Full-Stack Web Developer &amp; Designer.</p>
                 <p>I'm open to opportunities.</p>
-                <p>What about you ?^1500</p>
+                <p>What about you?^1500</p>
             </div>
             <div class="wave-container"></div>
         </section>
-
     </header>
-    <!--Main Navigation-->
 
-    <div id="presentation">
+    <section id="container" class="container">
+        <div id="presentation">
+            <h4 class="text-center mb-4 col-12"><i class="fal fa-user-alt"></i> Presentation</h4>
+            <div class="row">
+                <span class="col-xl-2 offset-xl-0 col-6 offset-3 d-flex align-items-center">
+                    <img class="img-fluid wow flipInX" src="img/bertrandc.png" />
+                </span>
+                <span id="presentation-text" class="col-xl-10 col-sm-12">
+                    <p>
+                        Design, development, management and organization, that is my definition of IT.
+                    </p>
+                    <p>
+                        By nature, I have perseverance, and I'm rigorous, enthusiastic, never fully satisfied, and always
+                        listening. I began web development at 12, which is now my preferred field. I am currently a French
+                        CS Engineer. I'm trained to develop innovative websites in modern languages.
+                    </p>
+                    <p>
+                        I train myself with a lot of online trainings, on websites like uDemy, Microsoft Virtual Academy,
+                        and others because front-end languages change every day.
+                    </p>
+                    <p>
+                        Passionate about IT, but also aeronautics and music creation, I am interested in innovation
+                        in multiple fields, which permits me to always learn new things!
+                    </p>
+                </span>
+            </div>
+        </div>
+        <div id="experiences">
+            <h4 class="text-center mb-4 col-12"><i class="fal fa-building"></i> Experiences</h4>
+            <div class="row align-items-stretch exp-container">
+                <span class="col-xl-2 offset-xl-0 col-6 offset-3 d-flex flex-column justify-content-center text-center exp-company">
+                    <i class="icon-maincare w-100 fa-6x"></i>
+                    <em></em>
+                </span>
+                <div id="presentation-text" class="col-xl-10 col-sm-12">
+                    <h4>Java EE Full-Stack Web Developer &amp; Conceptor <span class="font-italic grey-text d-inline-block">(via Intitek)</span></h4>
+                    <span>
+                        <i class="pl-2 fal fa-clock maincare-color"></i> September 2017 - March 2018
+                        <i class="pl-2 fal fa-map-marker maincare-color"></i> Lyon, FR
+                        <i class="pl-2 fal fa-building maincare-color"></i> Maincare Solutions, E-Health Leader
+                        <a class="pl-2 blackColor" href="https://www.maincare.com/" target="_blank" title="Maincare's website">
+                            <i class="fal fa-globe maincare-color"></i>
+                        </a>
+                    </span>
+                    <div class="project-container">
+                        <span class="project">
+                            IdeoSanté
+                            <span class="float-right">
+                                <i class="mr-2 fas fa-stethoscope"></i>
+                                <i class="icon-java"></i>
+                                <i class="icon-backbone"></i>
+                                <i class="icon-bootstrap"></i>
+                                <i class="icon-jenkins"></i>
+                                <i class="mx-2 fas fa-chevron-right"></i>
+                            </span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-stretch mt-2 exp-container">
+                <span class="col-xl-2 offset-xl-0 col-6 offset-3 d-flex flex-column justify-content-center text-center exp-company">
+                    <i class="icon-vdsconsulting w-100 fa-6x"></i>
+                    <em></em>
+                </span>
+                <span id="presentation-text" class="col-xl-10 col-sm-12">
+                    <h4>Conceptor Developper Full-Stack - Ops - Designer</h4>
+                    <span>
+                        <i class="pl-2 fal fa-clock vds-color"></i> February 2017 - September 2017
+                        <i class="pl-2 fal fa-map-marker vds-color"></i> Remote
+                        <i class="pl-2 fal fa-building vds-color"></i> VDS Consulting, an IT company
+                        <a class="pl-2 blackColor" href="http://vds-consulting.be/" target="_blank" title="VDS Consulting's website">
+                            <i class="fal fa-globe vds-color"></i>
+                        </a>
+                    </span>
+                </span>
+            </div>
+            <div class="row align-items-stretch mt-2 exp-container">
+                <span class="col-xl-2 offset-xl-0 col-6 offset-3 d-flex flex-column justify-content-center text-center exp-company">
+                    <i class="icon-iunex w-100 fa-6x"></i>
+                    <em></em>
+                </span>
+                <span id="presentation-text" class="col-xl-10 col-sm-12">
+                    <h4>PHP and Chrome extension developer</h4>
+                    <span>
+                        <i class="pl-2 fal fa-clock iunex-color"></i> July 2016 - March 2017
+                        <i class="pl-2 fal fa-map-marker iunex-color"></i> Remote
+                        <i class="pl-2 fal fa-building iunex-color"></i> Iunex Group, a creative agency
+                        <a class="pl-2 blackColor" href="http://www.iunex.com/" target="_blank" title="Iunex's website">
+                            <i class="fal fa-globe iunex-color"></i>
+                        </a>
+                    </span>
+                </span>
+            </div>
+            <div class="row align-items-stretch mt-2 exp-container">
+                <span class="col-xl-2 offset-xl-0 col-6 offset-3 d-flex flex-column justify-content-center text-center exp-company">
+                    <i class="icon-braytonglobal w-100 fa-6x"></i>
+                    <em></em>
+                </span>
+                <span id="presentation-text" class="col-xl-10 col-sm-12">
+                    <h4>Front-End Web Developper and IT Consultant</h4>
+                    <span>
+                        <i class="pl-2 fal fa-clock brg-color"></i> January 2016 - September 2016
+                        <i class="pl-2 fal fa-map-marker brg-color"></i> Remote
+                        <i class="pl-2 fal fa-building brg-color"></i> Brayton Global, a Brussels start-up
+                        <a class="pl-2 blackColor" href="http://www.braytonglobal.com/" target="_blank" title="Brayton Global's website">
+                            <i class="fal fa-globe brg-color"></i>
+                        </a>
+                    </span>
+                </span>
+            </div>
+            <div class="row align-items-stretch mt-2 exp-container">
+                <span class="col-xl-2 offset-xl-0 col-6 offset-3 d-flex flex-column justify-content-center text-center exp-company">
+                    <i class="icon-braytonglobal w-100 fa-6x"></i>
+                    <em></em>
+                </span>
+                <span id="presentation-text" class="col-xl-10 col-sm-12">
+                    <h4>Team Manager - Front-End Web Lead Developer</h4>
+                    <span>
+                        <i class="pl-2 fal fa-clock brg-color"></i> July 2015 - January 2016
+                        <i class="pl-2 fal fa-map-marker brg-color"></i> Brussels &amp; Antwerpen, BE
+                        <i class="pl-2 fal fa-building brg-color"></i> Brayton Global, a Brussels start-up
+                        <a class="pl-2 blackColor" href="http://www.braytonglobal.com/" target="_blank" title="Brayton Global's website">
+                            <i class="fal fa-globe brg-color"></i>
+                        </a>
+                    </span>
+                </span>
+            </div>
+            <div class="row align-items-stretch mt-2 exp-container">
+                <span class="col-xl-2 offset-xl-0 col-6 offset-3 d-flex flex-column justify-content-center text-center exp-company">
+                    <i class="icon-polyenco w-100 fa-6x"></i>
+                    <em></em>
+                </span>
+                <span id="presentation-text" class="col-xl-10 col-sm-12">
+                    <h4>Mobile Application Tester <span class="font-italic grey-text d-inline-block">(via Polyenco)</span></h4>
+                    <span>
+                        <i class="pl-2 fal fa-clock citylity-color"></i> January 2015 - June 2015
+                        <i class="pl-2 fal fa-map-marker citylity-color"></i> Lyon, FR
+                        <i class="pl-2 fal fa-building citylity-color"></i> CityLity
+                        <a class="pl-2 blackColor" href="https://www.citylity.com/" target="_blank" title="Citylity's website">
+                            <i class="fal fa-globe citylity-color"></i>
+                        </a>
+                    </span>
+                </span>
+            </div>
+            <div class="row align-items-stretch mt-2 exp-container">
+                <span class="col-xl-2 offset-xl-0 col-6 offset-3 d-flex flex-column justify-content-center text-center exp-company">
+                    <i class="icon-cnhindustrial w-100 fa-6x"></i>
+                    <em></em>
+                </span>
+                <span id="presentation-text" class="col-xl-10 col-sm-12">
+                    <h4>Analyst Developer</h4>
+                    <span>
+                        <i class="pl-2 fal fa-clock cnh-color"></i> April 2014 - June 2014
+                        <i class="pl-2 fal fa-map-marker cnh-color"></i> Bourbon-Lancy, FR
+                        <i class="pl-2 fal fa-building cnh-color"></i> CNH Industrial
+                        <a class="pl-2 blackColor" href="http://www.cnhindustrial.com" target="_blank" title="CNH Industrial's website">
+                            <i class="fal fa-globe cnh-color"></i>
+                        </a>
+                    </span>
+                </span>
+            </div>
+            <div class="row align-items-stretch mt-2 exp-container">
+                <span class="col-xl-2 offset-xl-0 col-6 offset-3 d-flex flex-column justify-content-center text-center exp-company">
+                    <i class="icon-ain w-100 fa-6x"></i>
+                    <em></em>
+                </span>
+                <span id="presentation-text" class="col-xl-10 col-sm-12">
+                    <h4>Development oriented traceability / inventory management</h4>
+                    <span>
+                        <i class="pl-2 fal fa-clock ain-color"></i> November 2013 - March 2014
+                        <i class="pl-2 fal fa-map-marker ain-color"></i> Bourg-en-Bresse, FR
+                        <i class="pl-2 fal fa-building ain-color"></i> Archives départementales de l'Ain
+                        <a class="pl-2 blackColor" href="http://www.archives.ain.fr/" target="_blank" title="Archives de l'Ain's website">
+                            <i class="fal fa-globe ain-color"></i>
+                        </a>
+                    </span>
+                </span>
+            </div>
+        </div>
+        <div id="education">
+            <h4 class="text-center mb-4 col-12"><i class="fal fa-graduation-cap"></i> Education</h4>
+            <div class="row align-items-stretch mt-2 edu-container">
+                <span class="col-xl-2 offset-xl-0 col-6 offset-3 d-flex flex-column justify-content-center text-center edu-school">
+                    <i class="icon-harvard-alt harvard-color w-100 fa-6x"></i>
+                    <em></em>
+                </span>
+                <span id="presentation-text" class="col-xl-10 col-sm-12">
+                    <h4>CS50x - CSCI E-50x @ Harvard University</h4>
+                    <span>
+                        <i class="pl-2 fal fa-clock harvard-color"></i> July 2017 - November 2017
+                        <i class="pl-2 fal fa-map-marker harvard-color"></i> Remote via edX
+                        <a class="pl-2 blackColor" href="https://cs50.harvard.edu/" target="_blank" title="Archives de l'Ain's website">
+                            <i class="fal fa-globe harvard-color"></i>
+                        </a>
+                    </span>
+                </span>
+            </div>
+            <div class="row align-items-stretch mt-2 edu-container">
+                <span class="col-xl-2 offset-xl-0 col-6 offset-3 d-flex flex-column justify-content-center text-center edu-school">
+                    <i class="icon-polytech polytech-color w-100 fa-6x"></i>
+                    <em></em>
+                </span>
+                <span id="presentation-text" class="col-xl-10 col-sm-12">
+                    <h4>CS Engineering @ Polytech Lyon</h4>
+                    <span>
+                        <i class="pl-2 fal fa-clock polytech-color"></i> September 2014 - August 2017
+                        <i class="pl-2 fal fa-map-marker polytech-color"></i> Lyon, FR
+                        <a class="pl-2 blackColor" href="http://polytech.univ-lyon1.fr/programs/computer-science/standard/standard-computer-engineering-curriculum-793066.kjsp" target="_blank" title="Archives de l'Ain's website">
+                            <i class="fal fa-globe polytech-color"></i>
+                        </a>
+                    </span>
+                </span>
+            </div>
+        </div>
+        <div id="skills">
+            <h4 class="text-center mb-4 col-12"><i class="fal fa-code"></i> Skills</h4>
+            aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa
+        </div>
+        <div id="projects">
+            <h4 class="text-center mb-4 col-12"><i class="fal fa-desktop"></i> Projects</h4>
+            aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa
+        </div>
+        <div id="contact">
 
-        aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa
-    </div>
+            <form class="row">
+                <h4 class="text-center mb-4 col-12"><i class="fal fa-envelope"></i> Contact me!</h4>
+            
+                <div class="md-form col-sm-6">
+                    <i class="fas fa-user-alt prefix color"></i>
+                    <input type="text" id="materialFormContactNameEx" class="form-control">
+                    <label for="materialFormContactNameEx">Your name</label>
+                </div>
+            
+                <div class="md-form col-sm-6">
+                    <i class="fas fa-envelope prefix color"></i>
+                    <input type="email" id="materialFormContactEmailEx" class="form-control">
+                    <label for="materialFormContactEmailEx">Your email</label>
+                </div>
+                
+                <div class="md-form col-12">
+                    <i class="fas fa-pencil prefix color"></i>
+                    <textarea type="text" id="materialFormContactMessageEx" class="form-control md-textarea" rows="2"></textarea>
+                    <label for="materialFormContactMessageEx">Your message</label>
+                </div>
+            
+                <div class="text-center mt-4 col-12">
+                    <button class="btn btn-outline bg-color" type="submit">Send<i class="fas fa-paper-plane ml-2"></i></button>
+                </div>
+            </form>
+        </div>
+
+
+    </section>
+
+    <footer class="page-footer font-small unique-color-dark pt-0">
+        <div class="bg-color">
+            <div class="container">
+                <div class="row py-4 d-flex align-items-center">
+                    <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                        <h6 class="mb-0 white-text">Get connected with me on social networks!</h6>
+                    </div>
+
+                    <div class="col-md-6 col-lg-7 text-center text-md-right">
+                        <a href="https://www.linkedin.com/in/chbefr" target="_blank">
+                            <i class="fab fa-linkedin-in fa-lg mr-lg-3 fa-fw"></i>
+                        </a>
+                        <a href="https://www.viadeo.com/p/0021uusxi2kw4man" target="_blank">
+                            <i class="fab fa-viadeo fa-lg mr-lg-3 fa-fw"></i>
+                        </a>
+                        <a href="https://dribbble.com/bertrand-choubert" target="_blank">
+                            <i class="fab fa-dribbble fa-lg mr-lg-3 fa-fw"></i>
+                        </a>
+                        <a href="https://github.com/BioK03" target="_blank">
+                            <i class="fab fa-github fa-lg mr-lg-3 fa-fw"></i>
+                        </a>
+                        <a href="https://www.udemy.com/user/bertrandchoubert/" target="_blank">
+                            <i class="icon-udemy fa-lg mr-lg-3 fa-fw"></i>
+                        </a>
+                        <a href="https://www.codeschool.com/users/BioK03" target="_blank">
+                            <i class="icon-codeschool fa-lg mr-lg-3 fa-fw"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="container mt-5 mb-4 text-center text-md-left">
+            <div class="row mt-3">
+                <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+                    <h6 class="text-uppercase font-weight-bold"><strong>Company name</strong></h6>
+                    <hr class="bg-color mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>Here you can use rows and columns here to organize your footer content. Lorem ipsum dolor sit
+                        amet, consectetur adipisicing elit.</p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase font-weight-bold"><strong>Products</strong></h6>
+                    <hr class="bg-color mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p><a href="#!">MDBootstrap</a></p>
+                    <p><a href="#!">MDWordPress</a></p>
+                    <p><a href="#!">BrandFlow</a></p>
+                    <p><a href="#!">Bootstrap Angular</a></p>
+                </div>
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase font-weight-bold"><strong>Useful links</strong></h6>
+                    <hr class="bg-color mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p><a href="#!">Your Account</a></p>
+                    <p><a href="#!">Become an Affiliate</a></p>
+                    <p><a href="#!">Shipping Rates</a></p>
+                    <p><a href="#!">Help</a></p>
+                </div>
+                <div class="col-md-4 col-lg-3 col-xl-3">
+                    <h6 class="text-uppercase font-weight-bold"><strong>Contact</strong></h6>
+                    <hr class="bg-color mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p><i class="fa fa-home mr-3"></i> New York, NY 10012, US</p>
+                    <p><i class="fa fa-envelope mr-3"></i> info@example.com</p>
+                    <p><i class="fa fa-phone mr-3"></i> + 01 234 567 88</p>
+                    <p><i class="fa fa-print mr-3"></i> + 01 234 567 89</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright py-3 text-center">
+            <div class="container-fluid">
+                © 2018 Copyright: <strong>Bertrand Choubert</strong></a>
+            </div>
+        </div>
+    </footer>
 
     <!-- SCRIPTS -->
     <!-- JQuery -->

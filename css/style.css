@@ -1,6 +1,6 @@
 /* Your custom styles */
 .intro {
-    background: url("../img/0.jpg") no-repeat center center;
+    background: url("../img/background.jpg") no-repeat center center;
     background-size: cover;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .top-nav-collapse {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(76, 110, 245, 0.8);
 }
 
 .navbar:not(.top-nav-collapse) {
@@ -47,3 +47,130 @@
     background-repeat: repeat-x;
     background-position: left bottom;
 }
+
+.navbar .nav-link.active {
+    background-color: rgba(255,255,255,.3);
+}
+
+section#container {
+    color: #333333;
+}
+
+#presentation img.img-fluid {
+    border-right: 1px solid #4C6EF5;
+}
+
+#contact .md-form .prefix~label {
+    margin-left: 3.5rem;
+}
+
+.bg-color {
+    background-color: #4C6EF5;
+}
+
+.color {
+    color: #4C6EF5;
+}
+
+#experiences .exp-container .exp-company,
+#education .edu-container .edu-school {
+    position: relative;
+}
+
+#experiences .exp-container .exp-company em,
+#education .edu-container .edu-school em {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    width: 1px;
+    height: 100%;
+    z-index: 0;
+    transition: width 0.5s;
+}
+
+#experiences .exp-container:hover .exp-company em,
+#education .edu-container:hover .edu-school em {
+    width: calc(100% - 30px);
+}
+
+#experiences .exp-container:hover .exp-company i,
+#education .edu-container:hover .edu-school i {
+    color: #FFFFFF !important;
+}
+
+#experiences .exp-container .exp-company i,
+#education .edu-container .edu-school i {
+    z-index: 2;
+    transition: color 0.5s;
+}
+
+#experiences .project-container {
+    margin-top: 1em;
+    width: 100%;
+    display: block;
+}
+
+#experiences .project {
+    width: 100%;
+    background-color: #259972;
+    display: block;
+    color: #FFFFFF;
+    padding: 0.25em;
+    border-radius: 4px;
+}
+
+#contact .btn-outline i {
+    color: #FFFFFF;
+}
+
+#contact .md-form input[type=date]:focus:not([readonly])+label, 
+#contact .md-form input[type=datetime-local]:focus:not([readonly])+label,
+#contact .md-form input[type=email]:focus:not([readonly])+label, 
+#contact .md-form input[type=number]:focus:not([readonly])+label, 
+#contact .md-form input[type=password]:focus:not([readonly])+label, 
+#contact .md-form input[type=search-md]:focus:not([readonly])+label, 
+#contact .md-form input[type=search]:focus:not([readonly])+label, 
+#contact .md-form input[type=tel]:focus:not([readonly])+label, 
+#contact .md-form input[type=text]:focus:not([readonly])+label, 
+#contact .md-form input[type=time]:focus:not([readonly])+label, 
+#contact .md-form input[type=url]:focus:not([readonly])+label, 
+#contact .md-form textarea.md-textarea:focus:not([readonly])+label {
+    color: #4C6EF5;
+}
+
+#contact .md-form input[type=date]:focus:not([readonly]), 
+#contact .md-form input[type=datetime-local]:focus:not([readonly]), 
+#contact .md-form input[type=email]:focus:not([readonly]), 
+#contact .md-form input[type=number]:focus:not([readonly]), 
+#contact .md-form input[type=password]:focus:not([readonly]), 
+#contact .md-form input[type=search-md]:focus:not([readonly]), 
+#contact .md-form input[type=search]:focus:not([readonly]), 
+#contact .md-form input[type=tel]:focus:not([readonly]), 
+#contact .md-form input[type=text]:focus:not([readonly]), 
+#contact .md-form input[type=time]:focus:not([readonly]), 
+#contact .md-form input[type=url]:focus:not([readonly]), 
+#contact .md-form textarea.md-textarea:focus:not([readonly]) {
+    box-shadow: 0 1px 0 0 #4C6EF5;
+    border-bottom: 1px solid #4C6EF5;
+}
+
+#contact .md-form .prefix,
+#contact .md-form .prefix.active {
+    color: #4C6EF5;
+}
+
+.lay_sbs1 {
+    width: 8em;
+}
+
+.lay_sbs2 {
+    width: calc(100% - 8em);
+}
+
+@media (max-width: 1200px) {
+    #presentation img.img-fluid {
+        border: none;
+    }
+    
+}
+

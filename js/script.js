@@ -9,4 +9,8 @@
         loopCount: Infinity,
         showCursor: false
     });
+
+    $("body").scrollspy({ target: "#navbar-scrollspy" });
+
+    new WOW().init();
 })();

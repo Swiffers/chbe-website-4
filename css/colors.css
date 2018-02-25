@@ -1,0 +1,75 @@
+.blackColor, .blackColor:focus, .blackColor:hover, .blackColor:visited {
+    color: #000000;
+}
+
+.maincare-color {
+    color: #FF6640;
+}
+
+i[class^='icon-maincare'] + em {
+    background-color: #FF6640;
+}
+
+.vds-color {
+    color: #FFD15D;
+}
+
+i[class^='icon-vds'] + em {
+    background-color: #FFD15D;
+}
+
+.iunex-color {
+    color: #90A9A9;
+}
+
+i[class^='icon-iunex'] + em {
+    background-color: #90A9A9;
+}
+
+.brg-color {
+    color: #DD7627;
+}
+
+i[class^='icon-brayton'] + em {
+    background-color: #DD7627;
+}
+
+.citylity-color {
+    color: #3598DC;
+}
+
+i[class^='icon-polyenco'] + em {
+    background-color: #3598DC;
+}
+
+.cnh-color {
+    color: #A32428;
+}
+
+i[class^='icon-cnh'] + em {
+    background-color: #A32428;
+}
+
+.ain-color {
+    color: #0683B9;
+}
+
+i[class^='icon-ain'] + em {
+    background-color: #0683B9;
+}
+
+.harvard-color {
+    color: #A41034;
+}
+
+i[class^='icon-harvard'] + em {
+    background-color: #A41034;
+}
+
+.polytech-color {
+    color: #009EE2;
+}
+
+i[class^='icon-polytech'] + em {
+    background-color: #009EE2;
+}
