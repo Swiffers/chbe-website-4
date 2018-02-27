@@ -10,12 +10,32 @@ i[class^='icon-maincare'] + em {
     background-color: #FF6640;
 }
 
+.ideosante-color {
+    color: #259972;
+}
+
 .vds-color {
     color: #FFD15D;
 }
 
 i[class^='icon-vds'] + em {
     background-color: #FFD15D;
+}
+
+.nba-color {
+    color: #00B5AC;
+}
+
+.factorio-color {
+    color: #304FFE;
+}
+
+.cvbroker-color {
+    color: #4486F4;
+}
+
+.mlc-color {
+    color: #E08E44;
 }
 
 .iunex-color {
@@ -72,4 +92,12 @@ i[class^='icon-harvard'] + em {
 
 i[class^='icon-polytech'] + em {
     background-color: #009EE2;
+}
+
+.iut-color {
+    color: #F99C1C;
+}
+
+i[class^='icon-lyon1'] + em {
+    background-color: #F99C1C;
 }
