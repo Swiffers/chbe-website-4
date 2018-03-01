@@ -42,16 +42,30 @@ i[class^='icon-vds'] + em {
     color: #90A9A9;
 }
 
+.rjo-color {
+    color: #4A8AF4;
+}
+
+.ct-color,
+.ctw-color {
+    color: #FF783D;
+}
+
 i[class^='icon-iunex'] + em {
     background-color: #90A9A9;
 }
 
-.brg-color {
-    color: #DD7627;
+.brg-color,
+.vms-color {
+    color: #DD7520;
+}
+
+.sm-color {
+    color: #939393;
 }
 
 i[class^='icon-brayton'] + em {
-    background-color: #DD7627;
+    background-color: #DD7520;
 }
 
 .citylity-color {
@@ -95,9 +109,129 @@ i[class^='icon-polytech'] + em {
 }
 
 .iut-color {
-    color: #F99C1C;
+    color: #FE8800;
 }
 
 i[class^='icon-lyon1'] + em {
+    background-color: #FE8800;
+}
+
+.ljm-color {
+    color: #FCC000;
+}
+
+i[class^='icon-lycees'] + em {
     background-color: #F99C1C;
+}
+
+.qwilabs-color {
+    color: #F5CD0E;
+}
+
+i[class^='icon-qwiklabs'] + em {
+    background-color: #F5CD0E;
+}
+
+.google-color {
+    color: #4CAF50;
+}
+
+i[class^='icon-google'] + em {
+    background-color: #4CAF50;
+}
+
+.cci-color {
+    color: #004079;
+}
+
+i[class^='icon-cci'] + em {
+    background-color: #004079;
+}
+
+.smp-color {
+    color: #FE541C;
+}
+
+i[class^='icon-socialmedia'] + em {
+    background-color: #FE541C;
+}
+
+.udemy-color {
+    color: #ED5353;
+}
+
+i[class^='icon-udemy'] + em {
+    background-color: #ED5353;
+}
+
+.mva-color {
+    color: #00BCF2;
+}
+
+i[class^='icon-mva'] + em {
+    background-color: #00BCF2;
+}
+
+.codeschool-color {
+    color: #48ADC1;
+}
+
+i[class^='icon-codeschool'] + em {
+    background-color: #48ADC1;
+}
+
+.livementor-color {
+    color: #283339;
+}
+
+i[class^='icon-livementor'] + em {
+    background-color: #283339;
+}
+
+.skill i[class^='fal fa-desktop'] + em {
+    background-color: #2962ff;
+}
+
+.frontend-color {
+    color: #2962ff;
+}
+
+.skill i[class^='fal fa-paint'] + em {
+    background-color: #ff6d00;
+}
+
+.design-color {
+    color: #ff6d00;
+}
+
+.skill i[class^='fal fa-cogs'] + em {
+    background-color: #00bfa5;
+}
+
+.backend-color {
+    color: #00bfa5;
+}
+
+.skill i[class^='fal fa-server'] + em {
+    background-color: #ffab00;
+}
+
+.ops-color {
+    color: #ffab00;
+}
+
+.skill i[class^='fal fa-database'] + em {
+    background-color: #dd2c00;
+}
+
+.database-color {
+    color: #dd2c00;
+}
+
+.skill i[class^='fal fa-microchip'] + em {
+    background-color: #0091ea;
+}
+
+.ml-color {
+    color: #0091ea;
 }
