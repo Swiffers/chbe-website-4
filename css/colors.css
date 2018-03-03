@@ -243,3 +243,83 @@ i[class^='icon-livementor'] + em {
 .ml-color {
     color: #0091ea;
 }
+
+.aerosafety-color {
+    color: #4285F4;
+}
+
+i[class^='icon-aerosafety'] + em {
+    background-color: #4285F4;
+}
+
+.bcfont-color {
+    color: #ea2c37;
+}
+
+i[class^='icon-bcfont'] + em {
+    background-color: #ea2c37;
+}
+
+.expo-color {
+    color: #AD5A4A;
+}
+
+i[class^='icon-expo'] + em {
+    background-color: #AD5A4A;
+}
+
+.evento-color {
+    color: #E91E63;
+}
+
+i[class^='icon-evento'] + em {
+    background-color: #E91E63;
+}
+
+.jsonimate-color {
+    color: #000000;
+}
+
+i[class^='icon-jsonimate'] + em {
+    background-color: #000000;
+}
+
+.velov-color {
+    color: #E1061E;
+}
+
+i[class^='icon-velov'] + em {
+    background-color: #E1061E;
+}
+
+.bmw-color {
+    color: #0093DD;
+}
+
+i[class^='icon-bmw'] + em {
+    background-color: #0093DD;
+}
+
+.studies-color {
+    color: #00A6D9;
+}
+
+i[class^='icon-studies'] + em {
+    background-color: #00A6D9;
+}
+
+.myachievements-color {
+    color: #33B5E5;
+}
+
+i[class^='icon-myachievements'] + em {
+    background-color: #33B5E5;
+}
+
+.pdt-color {
+    color: #000000;
+}
+
+i[class^='icon-pdt'] + em {
+    background-color: #000000;
+}

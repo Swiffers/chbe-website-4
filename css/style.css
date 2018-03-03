@@ -82,13 +82,15 @@ section#container {
 
 #experiences .exp-container .exp-company,
 #education .edu-container .edu-school,
-#skills .skill-container .skill {
+#skills .skill-container .skill,
+#projects .project-container .project {
     position: relative;
 }
 
 #experiences .exp-container .exp-company em,
 #education .edu-container .edu-school em,
-#skills .skill-container .skill em {
+#skills .skill-container .skill em,
+#projects .project-container .project em {
     position: absolute;
     top: 0;
     right: 15px;
@@ -100,19 +102,22 @@ section#container {
 
 #experiences .exp-container:hover .exp-company em,
 #education .edu-container:hover .edu-school em,
-#skills .skill-container:hover .skill em {
+#skills .skill-container:hover .skill em,
+#projects .project-container:hover .project em {
     width: calc(100% - 30px);
 }
 
 #experiences .exp-container:hover .exp-company i,
 #education .edu-container:hover .edu-school i,
-#skills .skill-container:hover .skill i {
+#skills .skill-container:hover .skill i,
+#projects .project-container:hover .project i {
     color: #FFFFFF !important;
 }
 
 #experiences .exp-container .exp-company i,
 #education .edu-container .edu-school i,
-#skills .skill-container .skill i {
+#skills .skill-container .skill i,
+#projects .project-container .project i {
     z-index: 2;
     transition: color 0.5s;
 }
