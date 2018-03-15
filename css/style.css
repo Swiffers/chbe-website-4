@@ -22,6 +22,15 @@ body {
     height: 2em;
 }
 
+.exp-project h5 {
+    margin-bottom: 0;
+    font-size: 1.15rem;
+}
+
+.exp-project p {
+    margin-bottom: 0.2em;
+}
+
 .top-nav-collapse {
     background-color: rgba(76, 110, 245, 0.8);
 }
@@ -123,22 +132,17 @@ section#container {
 }
 
 #experiences .project-container {
-    margin-top: 1em;
     width: 100%;
-    display: block;
 }
 
 #experiences .project {
-    width: calc(100% - 11px);
-    display: block;
-    border-width: 0 0 0 1px;
-    border-style: solid;
     cursor: pointer;
-    padding-left: 1em;
 }
 
-#experiences .project[data-toggle="collapse"]:not(.collapsed) .float-right i:last-child:before {
-    content: "\f078";
+#experiences .project > i:first-child {
+    font-size: 200%;
+    width: 1.5em;
+    display: inline-block;
 }
 
 #experiences .project[data-toggle="collapse"] .float-right {
@@ -155,6 +159,19 @@ section#container {
 
 #experiences .project .mrc-3 {
     margin-right: calc(3.75em + 6px);
+}
+
+#experiences .project > span {
+    width: calc(100% - 4em - 2px);
+    display: inline-block;
+    vertical-align: bottom;
+    padding-left: 1em;
+}
+
+#education .tag {
+    border-radius: 4px;
+    padding: 4px;
+    color: #FFFFFF;
 }
 
 #contact .btn-outline i {
@@ -211,4 +228,3 @@ section#container {
     }
     
 }
-

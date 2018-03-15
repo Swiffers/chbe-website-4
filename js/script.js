@@ -13,4 +13,8 @@
     $("body").scrollspy({ target: "#navbar-scrollspy" });
 
     new WOW().init();
+
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    });
 })();

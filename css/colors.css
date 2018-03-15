@@ -2,8 +2,16 @@
     color: #000000;
 }
 
+.whiteColor, .whiteColor:focus, .whiteColor:hover, .whiteColor:visited {
+    color: #FFFFFF;
+}
+
 .sogelink-color {
     color: #0062AE;
+}
+
+.sogelink-bgcolor {
+    background-color: #0062AE;
 }
 
 i[class^='icon-sogelink'] + em {
@@ -22,8 +30,20 @@ i[class^='icon-maincare'] + em {
     color: #259972;
 }
 
+.ideosante-bgcolor {
+    background-color: #259972;
+}
+
 .vds-color {
     color: #FFD15D;
+}
+
+.project.vds-color {
+    border-left: 1px solid #FFD15D;
+}
+
+.vds-bgcolor {
+    background-color: #FFD15D;
 }
 
 i[class^='icon-vds'] + em {
@@ -34,16 +54,48 @@ i[class^='icon-vds'] + em {
     color: #00B5AC;
 }
 
+.project.nba-color {
+    border-left: 1px solid #00B5AC;
+}
+
+.nba-bgcolor {
+    background-color: #00B5AC;
+}
+
 .factorio-color {
     color: #304FFE;
+}
+
+.project.factorio-color {
+    border-left: 1px solid #304FFE;
+}
+
+.factorio-bgcolor {
+    background-color: #304FFE;
 }
 
 .cvbroker-color {
     color: #4486F4;
 }
 
+.project.cvbroker-color {
+    border-left: 1px solid #4485F4;
+}
+
+.cvbroker-bgcolor {
+    background-color: #4486F4;
+}
+
 .mlc-color {
     color: #E08E44;
+}
+
+.project.mlc-color {
+    border-left: 1px solid #E08E44;
+}
+
+.mlc-bgcolor {
+    background-color: #E08E44;
 }
 
 .iunex-color {
@@ -52,6 +104,10 @@ i[class^='icon-vds'] + em {
 
 .rjo-color {
     color: #4A8AF4;
+}
+
+.rjo-bgcolor {
+    background-color: #4A8AF4;
 }
 
 .ct-color,
@@ -104,12 +160,20 @@ i[class^='icon-ain'] + em {
     color: #A41034;
 }
 
+.harvard-bgcolor {
+    background-color: #A41034;
+}
+
 i[class^='icon-harvard'] + em {
     background-color: #A41034;
 }
 
 .polytech-color {
     color: #009EE2;
+}
+
+.polytech-bgcolor {
+    background-color: #009EE2;
 }
 
 i[class^='icon-polytech'] + em {
@@ -244,6 +308,14 @@ i[class^='icon-livementor'] + em {
     color: #0091ea;
 }
 
+.skill i[class^='fal fa-mobile'] + em {
+    background-color: #00c853;
+}
+
+.mobile-color {
+    color: #00c853;
+}
+
 .aerosafety-color {
     color: #4285F4;
 }
@@ -261,11 +333,11 @@ i[class^='icon-bcfont'] + em {
 }
 
 .expo-color {
-    color: #AD5A4A;
+    color: #B04227;
 }
 
 i[class^='icon-expo'] + em {
-    background-color: #AD5A4A;
+    background-color: #B04227;
 }
 
 .evento-color {
