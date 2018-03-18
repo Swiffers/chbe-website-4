@@ -19,6 +19,10 @@
     });
 
     $(function () {
+<<<<<<< HEAD
         $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
+=======
+        $(".mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
+>>>>>>> origin/master
     });
 })();
