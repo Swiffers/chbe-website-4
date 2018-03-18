@@ -22,8 +22,11 @@ body {
     height: 2em;
 }
 
-.exp-project h5 {
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0;
+}
+
+.exp-project h5 {
     font-size: 1.15rem;
 }
 
@@ -171,7 +174,35 @@ section#container {
 #education .tag {
     border-radius: 4px;
     padding: 4px;
-    color: #FFFFFF;
+    white-space: nowrap;
+    line-height:  35px;
+}
+
+#experiences .exp-project-collapse,
+#projects .project-collapse {
+    padding-left: 1.5em;
+}
+
+#experiences .exp-project-collapse:before,
+#projects .project-collapse:before {
+    font-family: Font Awesome\ 5 Pro;
+    padding-right: 0.5em;
+    content: "\f068";
+}
+
+#experiences .exp-project-collapse:after,
+#projects .project-collapse:after {
+    content: "Less...";
+}
+
+#experiences .exp-project-collapse.collapsed:before,
+#projects .project-collapse.collapsed:before {
+    content: "\f067";
+}
+
+#experiences .exp-project-collapse.collapsed:after,
+#projects .project-collapse.collapsed:after {
+    content: "More...";
 }
 
 #contact .btn-outline i {
@@ -214,17 +245,50 @@ section#container {
     color: #4C6EF5;
 }
 
-.lay_sbs1 {
-    width: 8em;
-}
-
-.lay_sbs2 {
-    width: calc(100% - 8em);
-}
-
 @media (max-width: 1200px) {
     #presentation img.img-fluid {
         border: none;
     }
     
+    #experiences .exp-company > i:before,
+    #education .edu-school > i:before,
+    #projects .project > i:before,
+    #skills .skill > i:before {
+        color: #FFFFFF;
+    }
+
+    #experiences .exp-company > i,
+    #education .edu-school > i,
+    #projects .project > i {
+        font-size: 2em;
+        display: block;
+    }
+
+    #experiences .exp-container > .presentation-text,
+    #education .edu-container > .presentation-text,
+    #skills .skill-container > .presentation-text,
+    #projects .project-container > .presentation-text {
+        width: calc(100% - 1px);
+        -ms-flex: 0 0 calc(100% - 1px);
+        flex: 0 0 calc(100% - 1px);
+        max-width: calc(100% - 1px);
+    }
+
+    #experiences .exp-container .exp-company em, 
+    #education .edu-container .edu-school em, 
+    #skills .skill-container .skill em, 
+    #projects .project-container .project em {
+        width: calc(100% - 30px);
+    }
+
+    #experiences .exp-container .exp-company, 
+    #education .edu-container .edu-school, 
+    #skills .skill-container .skill, 
+    #projects .project-container .project {
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 100%;
+        max-width: 5em;
+        margin: 0 auto;
+    }
 }
