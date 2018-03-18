@@ -17,4 +17,8 @@
     $(function () {
         $('[data-toggle="tooltip"]').tooltip()
     });
+
+    $(function () {
+        $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
+    });
 })();

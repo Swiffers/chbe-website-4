@@ -28,6 +28,7 @@
 </head>
 
 <body>
+    <div id="mdb-lightbox-ui"></div>
     <header>
         <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
             <div class="container smooth-scroll">
@@ -119,7 +120,7 @@
         <div id="presentation">
             <h4 class="text-center mb-4 col-12 sectionTitle"><i class="fal fa-user-alt"></i> Presentation</h4>
             <div class="row">
-                <span class="col-lg-2 offset-lg-0 col-6 offset-3 d-flex align-items-center">
+                <span class="col-lg-2 offset-lg-0 col-4 offset-4 d-flex align-items-center">
                     <img class="img-fluid wow flipInX" src="img/bertrandc.png" />
                 </span>
                 <span id="presentation-text" class="col-lg-10 col-12">
@@ -145,11 +146,11 @@
         <div id="experiences">
             <h4 class="text-center mb-4 col-12 sectionTitle"><i class="fal fa-building"></i> Experiences</h4>
             <div class="row align-items-stretch exp-container">
-                <span class="col-lg-2 offset-lg-0 col-6 offset-3 d-flex flex-column justify-content-center text-center exp-company">
+                <span class="col-2 d-flex flex-column justify-content-center text-center exp-company">
                     <i class="icon-sogelink w-100 fa-6x"></i>
                     <em></em>
                 </span>
-                <div id="presentation-text" class="col-lg-10 col-12">
+                <div class="col-10 presentation-text">
                     <h4>R&amp;D Spring Full-Stack Web Developer &amp; Conceptor <span class="small grey-text d-inline-block">(via Intitek)</span></h4>
                     <span>
                         <i class="pl-2 fal fa-clock sogelink-color"></i> March 2018 - Current
@@ -171,10 +172,13 @@
                                     <i class="icon-jenkins-alt fa-fw" data-toggle="tooltip" data-placement="top" title="Jenkins"></i>
                                 </span>
                             </h5>
-                            <p class="grey-text">
-                                DICT<br/>
-                                Main Customers: Air Liquide, Bouygues, Colas, Eiffage, Egis, Enedis, Engie, Grand Lyon, GRDF, Keolis, Orange, Saur, SNCF, Veolia, Vinci...
-                            </p>
+                            <div>
+                                <span>Leader of French public works legal declarations</span>
+                                <a class="collapsed sogelink-color exp-project-collapse" data-toggle="collapse" href="#collapseDICT" aria-expanded="false" aria-controls="collapseDICT"></a>
+                                <p id="collapseDICT" class="grey-text desc-exp-project collapse">
+                                    Main Customers: Air Liquide, Bouygues, Colas, Eiffage, Egis, Enedis, Engie, Grand Lyon, GRDF, Keolis, Orange, Saur, SNCF, Veolia, Vinci...
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -184,7 +188,7 @@
                     <i class="icon-maincare w-100 fa-6x"></i>
                     <em></em>
                 </span>
-                <div id="presentation-text" class="col-10">
+                <div class="col-10 presentation-text">
                     <h4>Java EE Full-Stack Web Developer &amp; Conceptor <span class="small grey-text d-inline-block">(via Intitek)</span></h4>
                     <span>
                         <i class="pl-2 fal fa-clock maincare-color"></i> September 2017 - March 2018
@@ -206,8 +210,13 @@
                                     <i class="icon-jenkins-alt fa-fw" data-toggle="tooltip" data-placement="top" title="Jenkins"></i>
                                 </span>
                             </h5>
-                            <p class="grey-text">IdeoMed and IdeoSante are e-Health products for hospital management.
-                                These products are proposed by MainCare, E-Health french leader, that equips more than 80% of French regional hospitals.</p>
+                            <div>
+                                <span>IdeoMed and IdeoSante are e-Health products for hospital management</span>
+                                <a class="collapsed ideosante-color exp-project-collapse" data-toggle="collapse" href="#collapseIdeomed" aria-expanded="false" aria-controls="collapseIdeomed"></a>
+                                <p id="collapseIdeomed" class="grey-text desc-exp-project collapse">
+                                    These products are proposed by MainCare, E-Health french leader, that equips more than 80% of French regional hospitals.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -217,7 +226,7 @@
                     <i class="icon-vdsconsulting w-100 fa-6x"></i>
                     <em></em>
                 </span>
-                <div id="presentation-text" class="col-10">
+                <div class="col-10 presentation-text">
                     <h4 class="">Conceptor Developper Full-Stack - Ops - Designer</h4>
                     <span>
                         <i class="pl-2 fal fa-clock vds-color"></i> February 2017 - September 2017
@@ -239,7 +248,13 @@
                                     <i class="icon-bootstrap fa-fw" data-toggle="tooltip" data-placement="top" title="Bootstrap"></i>
                                 </span>
                             </h5>
-                            <p class="grey-text">Complete e-commerce solution for the biggest aquarium physical store in Brussels that sells more than 10,000 references.</p>
+                            <div>
+                                <span>Complete e-commerce solution</span>
+                                <a class="collapsed nba-color exp-project-collapse" data-toggle="collapse" href="#collapseNba" aria-expanded="false" aria-controls="collapseNba"></a>
+                                <p id="collapseNba" class="grey-text desc-exp-project collapse">
+                                    Solution for the biggest aquarium physical store in Brussels that sells more than 10,000 references.
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div class="row w-100 exp-project">
@@ -255,7 +270,13 @@
                                     <i class="icon-grunt fa-fw" data-toggle="tooltip" data-placement="top" title="Grunt"></i>
                                 </span>
                             </h5>
-                            <p class="grey-text">Transparent factoring tool for companies and investors. Complete management of the payment deadlines.</p>
+                            <div>
+                                <span>Transparent factoring tool</span>
+                                <a class="collapsed factorio-color exp-project-collapse" data-toggle="collapse" href="#collapseFactorio" aria-expanded="false" aria-controls="collapseFactorio"></a>
+                                <p id="collapseFactorio" class="grey-text desc-exp-project collapse">
+                                    Factoring tool for companies and investors. Complete management of the payment deadlines.
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div class="row w-100 exp-project">
@@ -270,7 +291,13 @@
                                     <i class="icon-gulp fa-fw" data-toggle="tooltip" data-placement="top" title="Gulp"></i>
                                 </span>
                             </h5>
-                            <p class="grey-text">The showcase of VDS Consuling that details the company's expertises.</p>
+                            <div>
+                                <span>Showcase Website</span>
+                                <a class="collapsed vds-color exp-project-collapse" data-toggle="collapse" href="#collapseVds" aria-expanded="false" aria-controls="collapseVds"></a>
+                                <p id="collapseVds" class="grey-text desc-exp-project collapse">
+                                    The showcase of VDS Consuling that details the company's expertises.
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div class="row w-100 exp-project">
@@ -285,7 +312,13 @@
                                     <i class="icon-leaflet fa-fw" data-toggle="tooltip" data-placement="top" title="Leaflet"></i>
                                 </span>
                             </h5>
-                            <p class="grey-text">Simple process to find umbrella's companies. Auto-emailing system and full back-office.</p>
+                            <div>
+                                <span>Find umbrella's companies website</span>
+                                <a class="collapsed vds-color exp-project-collapse" data-toggle="collapse" href="#collapseUmbrella" aria-expanded="false" aria-controls="collapseUmbrella"></a>
+                                <p id="collapseUmbrella" class="grey-text desc-exp-project collapse">
+                                    Simple process to find umbrella's companies. Auto-emailing system and full back-office.
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div class="row w-100 exp-project">
@@ -300,7 +333,13 @@
                                     <i class="icon-bootstrap fa-fw" data-toggle="tooltip" data-placement="top" title="Bootstrap"></i>
                                 </span>
                             </h5>
-                            <p class="grey-text">Full management website for recruiters and companies. Profile management and auto-match between offers and candidates.</p>
+                            <div>
+                                <span>Full management website for recruiters and companies</span>
+                                <a class="collapsed cvbroker-color exp-project-collapse" data-toggle="collapse" href="#collapseCvbroker" aria-expanded="false" aria-controls="collapseCvbroker"></a>
+                                <p id="collapseCvbroker" class="grey-text desc-exp-project collapse">
+                                    Profile management and auto-match between offers and candidates.
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div class="row w-100 exp-project">
@@ -314,7 +353,13 @@
                                     <i class="icon-bootstrap fa-fw" data-toggle="tooltip" data-placement="top" title="Bootstrap"></i>
                                 </span>
                             </h5>
-                            <p class="grey-text">Innovative crowd-fuinding solution for Dubaï real-estate investments. Asset management and secure renting.</p>
+                            <div>
+                                <span>Real-estate crowd-funding</span>
+                                <a class="collapsed mlc-color exp-project-collapse" data-toggle="collapse" href="#collapseMlc" aria-expanded="false" aria-controls="collapseMlc"></a>
+                                <p id="collapseMlc" class="grey-text desc-exp-project collapse">
+                                    Innovative crowd-fuinding solution for Dubaï real-estate investments. Asset management and secure renting.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -324,7 +369,7 @@
                     <i class="icon-iunex w-100 fa-6x"></i>
                     <em></em>
                 </span>
-                <div id="presentation-text" class="col-10">
+                <div class="col-10 presentation-text">
                     <h4>PHP and Chrome extension developer</h4>
                     <span>
                         <i class="pl-2 fal fa-clock iunex-color"></i> July 2016 - March 2017
@@ -346,7 +391,13 @@
                                     <i class="icon-bootstrap fa-fw" data-toggle="tooltip" data-placement="top" title="Bootstrap"></i>
                                 </span>
                             </h5>
-                            <p class="grey-text">Inventive Chrome Extension to find a job !</p>
+                            <div>
+                                <span>Inventive Chrome Extension to find a job !</span>
+                                <a class="collapsed rjo-color exp-project-collapse" data-toggle="collapse" href="#collapseRjo" aria-expanded="false" aria-controls="collapseRjo"></a>
+                                <p id="collapseRjo" class="grey-text desc-exp-project collapse">
+                                    ...
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div class="row w-100 exp-project">
@@ -361,7 +412,13 @@
                                     <i class="icon-bootstrap fa-fw" data-toggle="tooltip" data-placement="top" title="Bootstrap"></i>
                                 </span>
                             </h5>
-                            <p class="grey-text">Comment and discuss on web job offers have never been so simple !</p>
+                            <div>
+                                <span>Comment and discuss on web job offers have never been so simple !</span>
+                                <a class="collapsed ct-color exp-project-collapse" data-toggle="collapse" href="#collapseCt" aria-expanded="false" aria-controls="collapseCt"></a>
+                                <p id="collapseCt" class="grey-text desc-exp-project collapse">
+                                    ...
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div class="row w-100 exp-project">
@@ -376,7 +433,13 @@
                                     <i class="icon-bootstrap fa-fw" data-toggle="tooltip" data-placement="top" title="Bootstrap"></i>
                                 </span>
                             </h5>
-                            <p class="grey-text">Innovative solution for discussing about real-estate investments and offers.</p>
+                            <div>
+                                <span>Innovative solution for discussing about real-estate investments and offers.</span>
+                                <a class="collapsed ctw-color exp-project-collapse" data-toggle="collapse" href="#collapseCtw" aria-expanded="false" aria-controls="collapseCtw"></a>
+                                <p id="collapseCtw" class="grey-text desc-exp-project collapse">
+                                    ...
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -386,7 +449,7 @@
                     <i class="icon-braytonglobal w-100 fa-6x"></i>
                     <em></em>
                 </span>
-                <div id="presentation-text" class="col-10">
+                <div class="col-10 presentation-text">
                     <h4>Front-End Web Developper and IT Consultant</h4>
                     <span>
                         <i class="pl-2 fal fa-clock brg-color"></i> January 2016 - September 2016
@@ -408,8 +471,14 @@
                                     <i class="icon-jquery fa-fw" data-toggle="tooltip" data-placement="top" title="jQuery"></i>
                                 </span>
                             </h5>
-                            <p class="grey-text">The new era of Vessel Management. Vemasys is an fluvial navigation ERP for all the fluvial companies : 
-                                captains, fleets, sailors, shipping companies, cargo handlers, suppliers, audit &amp; insurance companies, sluices, drawbridges, harbors, industries...</p>
+                            <div>
+                                <span>The new era of Vessel Management.</span>
+                                <a class="collapsed vms-color exp-project-collapse" data-toggle="collapse" href="#collapseVms" aria-expanded="false" aria-controls="collapseVms"></a>
+                                <p id="collapseVms" class="grey-text desc-exp-project collapse">
+                                    Vemasys is an fluvial navigation ERP for all the fluvial companies : 
+                                    captains, fleets, sailors, shipping companies, cargo handlers, suppliers, audit &amp; insurance companies, sluices, drawbridges, harbors, industries...
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -419,7 +488,7 @@
                     <i class="icon-braytonglobal w-100 fa-6x"></i>
                     <em></em>
                 </span>
-                <div id="presentation-text" class="col-10">
+                <div class="col-10 presentation-text">
                     <h4>Front-End Web Lead Developer</h4>
                     <span>
                         <i class="pl-2 fal fa-clock brg-color"></i> July 2015 - January 2016
@@ -441,8 +510,14 @@
                                     <i class="icon-jquery fa-fw" data-toggle="tooltip" data-placement="top" title="jQuery"></i>
                                 </span>
                             </h5>
-                            <p class="grey-text">The new era of Vessel Management. Vemasys is an fluvial navigation ERP for all the fluvial companies : 
-                                captains, fleets, sailors, shipping companies, cargo handlers, suppliers, audit &amp; insurance companies, sluices, drawbridges, harbors, industries...</p>
+                            <div>
+                                <span>The new era of Vessel Management.</span>
+                                <a class="collapsed vms-color exp-project-collapse" data-toggle="collapse" href="#collapseVms2" aria-expanded="false" aria-controls="collapseVms2"></a>
+                                <p id="collapseVms2" class="grey-text desc-exp-project collapse">
+                                    Vemasys is an fluvial navigation ERP for all the fluvial companies : 
+                                    captains, fleets, sailors, shipping companies, cargo handlers, suppliers, audit &amp; insurance companies, sluices, drawbridges, harbors, industries...
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div class="row w-100 exp-project">
@@ -457,7 +532,13 @@
                                     <i class="icon-jquery fa-fw" data-toggle="tooltip" data-placement="top" title="jQuery"></i>
                                 </span>
                             </h5>
-                            <p class="grey-text">SkillMatrix is an Applicant Tracking System for recruitment companies.</p>
+                            <div>
+                                <span>Smart Applicant Tracking System for recruitment companies.</span>
+                                <a class="collapsed sm-color exp-project-collapse" data-toggle="collapse" href="#collapseSkillmatrix" aria-expanded="false" aria-controls="collapseSkillmatrix"></a>
+                                <p id="collapseSkillmatrix" class="grey-text desc-exp-project collapse">
+                                    ...
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -467,7 +548,7 @@
                     <i class="icon-citylity w-100 fa-2x"></i>
                     <em></em>
                 </span>
-                <span id="presentation-text" class="col-10">
+                <div class="col-10 presentation-text">
                     Android App Tester <span class="small grey-text d-inline-block">(via Polyenco)</span><br/>
                     <span>
                         <i class="pl-2 fal fa-clock citylity-color"></i> January 2015 - June 2015
@@ -477,15 +558,14 @@
                             <i class="fal fa-globe citylity-color"></i>
                         </a>
                     </span>
-                </span>
-                
+                </div>
             </div>
             <div class="row align-items-stretch mt-2 exp-container">
                 <span class="col-2 d-flex flex-column justify-content-center text-center exp-company">
                     <i class="icon-cnhindustrial w-100 fa-2x"></i>
                     <em></em>
                 </span>
-                <span id="presentation-text" class="col-10">
+                <div class="col-10 presentation-text">
                     WinDev Analyst Developer<br/>
                     <span>
                         <i class="pl-2 fal fa-clock cnh-color"></i> April 2014 - June 2014
@@ -495,14 +575,14 @@
                             <i class="fal fa-globe cnh-color"></i>
                         </a>
                     </span>
-                </span>
+                </div>
             </div>
             <div class="row align-items-stretch mt-2 exp-container">
                 <span class="col-2 d-flex flex-column justify-content-center text-center exp-company">
                     <i class="icon-ain w-100 fa-2x"></i>
                     <em></em>
                 </span>
-                <span id="presentation-text" class="col-10">
+                <div class="col-10 presentation-text">
                     PHP Analyst Lead Developer <span class="small grey-text d-inline-block">(via IUT Lyon 1)</span><br/>
                     <span>
                         <i class="pl-2 fal fa-clock ain-color"></i> November 2013 - March 2014
@@ -512,7 +592,7 @@
                             <i class="fal fa-globe ain-color"></i>
                         </a>
                     </span>
-                </span>
+                </div>
             </div>
         </div>
         </div>
@@ -523,7 +603,7 @@
                     <i class="icon-harvard-alt w-100 fa-6x"></i>
                     <em></em>
                 </span>
-                <span id="presentation-text" class="col-10">
+                <div class="col-10 presentation-text">
                     <h4>CS50x - CSCI E-50x @ Harvard University</h4>
                     <span>
                         <i class="pl-2 fal fa-clock harvard-color"></i> July 2017 - November 2017
@@ -533,26 +613,26 @@
                         </a>
                     </span>
                     <div class="mt-2">
-                        <span class="tag harvard-bgcolor"><i class="fal fa-table"></i> Project Management</span>
-                        <span class="tag harvard-bgcolor"><i class="fal fa-database"></i> Data Structures</span>
-                        <span class="tag harvard-bgcolor"><i class="fal fa-lock"></i> Security</span>
-                        <span class="tag harvard-bgcolor"><i class="fal fa-cogs"></i> Complex Algorithms</span>
+                        <i class="pl-2 fal fa-table harvard-color"></i> Project Management
+                        <i class="pl-2 fal fa-database harvard-color"></i> Data Structures
+                        <i class="pl-2 fal fa-lock harvard-color"></i> Security
+                        <i class="pl-2 fal fa-cogs harvard-color"></i> Complex Algorithms
                     </div>
                     <div class="mt-2">
-                        <span class="tag harvard-bgcolor"><i class="icon-php"></i> PHP</span>
-                        <span class="tag harvard-bgcolor"><i class="icon-python"></i> Python</span>
-                        <span class="tag harvard-bgcolor"><i class="icon-mdbootstrap"></i> MDBootstrap</span>
-                        <span class="tag harvard-bgcolor"><i class="icon-javascript"></i> JavaScript</span>
-                        <span class="tag harvard-bgcolor"><i class="icon-mysql"></i> MySQL</span>
+                        <i class="pl-2 icon-php harvard-color"></i> PHP
+                        <i class="pl-2 icon-python harvard-color"></i> Python
+                        <i class="pl-2 icon-mdbootstrap harvard-color"></i> MDBootstrap
+                        <i class="pl-2 icon-javascript harvard-color"></i> JavaScript
+                        <i class="pl-2 icon-mysql harvard-color"></i> MySQL
                     </div>
-                </span>
+                </div>
             </div>
             <div class="row align-items-stretch mt-2 edu-container">
                 <span class="col-2 d-flex flex-column justify-content-center text-center edu-school">
                     <i class="icon-polytech-alt w-100 fa-6x"></i>
                     <em></em>
                 </span>
-                <span id="presentation-text" class="col-10">
+                <div class="col-10 presentation-text">
                     <h4>CS Engineer @ Polytech Lyon <span class="small grey-text d-inline-block">(Polytechnical Engineering School)</span></h4>
                     <span>
                         <i class="pl-2 fal fa-clock polytech-color"></i> September 2014 - August 2017
@@ -562,28 +642,29 @@
                         </a>
                     </span>
                     <div class="mt-2">
-                        <span class="tag polytech-bgcolor"><i class="fal fa-bullhorn"></i> Entrepreneurship</span>
-                        <span class="tag polytech-bgcolor"><i class="fal fa-users"></i> Team Leading</span>
-                        <span class="tag polytech-bgcolor"><i class="fal fa-table"></i> Project Management</span>
-                        <span class="tag polytech-bgcolor"><i class="fal fa-lightbulb"></i> Innovation</span>
+                        <i class="pl-2 fal fa-bullhorn polytech-color"></i> Entrepreneurship
+                        <i class="pl-2 fal fa-users polytech-color"></i> Team Leading
+                        <i class="pl-2 fal fa-table polytech-color"></i> Project Management
+                        <i class="pl-2 fal fa-lightbulb polytech-color"></i> Innovation
+                        <i class="pl-2 fab fa-searchengin polytech-color"></i> Web Marketing
                     </div>
                     <div class="mt-2">
-                        <span class="tag polytech-bgcolor"><i class="icon-java"></i> Java EE</span>
-                        <span class="tag polytech-bgcolor"><i class="icon-spring"></i> Spring</span>
-                        <span class="tag polytech-bgcolor"><i class="icon-nodejs"></i> NodeJS</span>
-                        <span class="tag polytech-bgcolor"><i class="icon-bootstrap"></i> Bootstrap</span>
-                        <span class="tag polytech-bgcolor"><i class="icon-angular"></i> Angular</span>
-                        <span class="tag polytech-bgcolor"><i class="icon-android"></i> Android</span>
-                        <span class="tag polytech-bgcolor"><i class="icon-qlik"></i> Qlik</span>
+                        <i class="pl-2 icon-java polytech-color"></i> Java EE
+                        <i class="pl-2 icon-spring polytech-color"></i> Spring
+                        <i class="pl-2 icon-nodejs polytech-color"></i> NodeJS
+                        <i class="pl-2 icon-bootstrap polytech-color"></i> Bootstrap
+                        <i class="pl-2 icon-angular polytech-color"></i> Angular
+                        <i class="pl-2 icon-android polytech-color"></i> Android
+                        <i class="pl-2 icon-qlik polytech-color"></i> Qlik
                     </div>
-                </span>
+                </div>
             </div>
             <div class="row align-items-stretch mt-2 edu-container">
                 <span class="col-2 d-flex flex-column justify-content-center text-center edu-school">
                     <i class="icon-lyon1 w-100 fa-2x"></i>
                     <em></em>
                 </span>
-                <span id="presentation-text" class="col-10">
+                <div class="col-10 presentation-text">
                     <h4>Analyst Developer @ IUT Lyon 1</h4>
                     <span>
                         <i class="pl-2 fal fa-clock iut-color"></i> September 2012 - June 2014
@@ -592,14 +673,14 @@
                             <i class="fal fa-globe iut-color"></i>
                         </a>
                     </span>
-                </span>
+                </div>
             </div>
             <div class="row align-items-stretch mt-2 edu-container">
                 <span class="col-2 d-flex flex-column justify-content-center text-center edu-school">
                     <i class="icon-lyceesjeanmonnet w-100 fa-2x"></i>
                     <em></em>
                 </span>
-                <span id="presentation-text" class="col-10">
+                <div class="col-10 presentation-text">
                     <h4>Scientific Baccalaureat, Engineering Sciences @ Lycees Jean Monnet</h4>
                     <span>
                         <i class="pl-2 fal fa-clock ljm-color"></i> June 2012
@@ -608,7 +689,7 @@
                             <i class="fal fa-globe ljm-color"></i>
                         </a>
                     </span>
-                </span>
+                </div>
             </div>
             <div class="row my-4"></div>
             <div class="row align-items-stretch mt-2 edu-container">
@@ -616,90 +697,142 @@
                     <i class="icon-qwiklabs w-100 fa-2x"></i>
                     <em></em>
                 </span>
-                <span id="presentation-text" class="col-10">
+                <div class="col-10 presentation-text">
                     <h4>AWS &amp; GCP Trainings @ QwikLabs / Google</h4>
                     <span>
                         <i class="pl-2 icon-aws qwilabs-color"></i> AWS
                         <i class="pl-2 icon-google-cloud qwilabs-color"></i> GCP
+                        <i class="pl-2 icon-aws-ec2 qwilabs-color"></i> EC2
+                        <i class="pl-2 icon-aws-dynamodb qwilabs-color"></i> DynamoDB
+                        <i class="pl-2 icon-aws-cloudformation qwilabs-color"></i> Cloud Formation
+                        <i class="pl-2 icon-aws-iam qwilabs-color"></i> IAM
                     </span>
-                </span>
+                </div>
             </div>
             <div class="row align-items-stretch mt-2 edu-container">
                 <span class="col-2 d-flex flex-column justify-content-center text-center edu-school">
                     <i class="icon-google w-100 fa-2x"></i>
                     <em></em>
                 </span>
-                <span id="presentation-text" class="col-10">
+                <div class="col-10 presentation-text">
                     <h4>Digital Active Certification @ Google</h4>
                     <span>
                         <i class="pl-2 icon-google-analytics google-color"></i> Google Analytics
                         <i class="pl-2 icon-google-adsense google-color"></i> Google AdSense
+                        <i class="pl-2 fab fa-searchengin google-color"></i> SEO
+                        <i class="pl-2 fal fa-arrows-alt-h google-color"></i> Tests A/B
                     </span>
-                </span>
+                </div>
             </div>
             <div class="row align-items-stretch mt-2 edu-container">
                 <span class="col-2 d-flex flex-column justify-content-center text-center edu-school">
                     <i class="icon-cci w-100 fa-2x"></i>
                     <em></em>
                 </span>
-                <span id="presentation-text" class="col-10">
+                <div class="col-10 presentation-text">
                     <h4>Entrepreneurs Pass @ CCI Lyon</h4>
-                </span>
+                    <span>
+                        <i class="pl-2 fal fa-bullhorn cci-color"></i> Entrepreneurship
+                        <i class="pl-2 fab fa-searchengin cci-color"></i> Web Marketing
+                    </span>
+                </div>
             </div>
             <div class="row align-items-stretch mt-2 edu-container">
                 <span class="col-2 d-flex flex-column justify-content-center text-center edu-school">
                     <i class="icon-socialmediapro-alt w-100 fa-2x"></i>
                     <em></em>
                 </span>
-                <span id="presentation-text" class="col-10">
-                    <h4>Social Media Pro</h4>
-                </span>
+                <div class="col-10 presentation-text">
+                    <h4>Digital Marketing @ Social Media Pro</h4>
+                    <span>
+                        <i class="pl-2 fab fa-searchengin smp-color"></i> SEO
+                        <i class="pl-2 fal fa-arrows-alt-h smp-color"></i> Tests A/B
+                        <i class="pl-2 icon-google-analytics smp-color"></i> Google Analytics
+                        <i class="pl-2 icon-mailchimp smp-color"></i> MailChimp
+                        <i class="pl-2 fab fa-facebook-f smp-color"></i> Facebook
+                        <i class="pl-2 fab fa-linkedin-in smp-color"></i> LinkedIn
+                    </span>
+                </div>
             </div>
             <div class="row align-items-stretch mt-2 edu-container">
                 <span class="col-2 d-flex flex-column justify-content-center text-center edu-school">
                     <i class="icon-udemy w-100 fa-2x"></i>
                     <em></em>
                 </span>
-                <span id="presentation-text" class="col-10">
+                <div class="col-10 presentation-text">
                     <h4>uDemy</h4>
-                </span>
+                    <span>
+                        <i class="pl-2 icon-angular udemy-color"></i> Angular
+                        <i class="pl-2 icon-nodejs udemy-color"></i> NodeJS
+                        <i class="pl-2 icon-javascript udemy-color"></i> JavaScript
+                        <i class="pl-2 icon-bootstrap udemy-color"></i> Bootstrap
+                        <i class="pl-2 icon-jquery udemy-color"></i> jQuery
+                        <i class="pl-2 fal fa-lock udemy-color"></i> Security
+                        <i class="pl-2 icon-swift udemy-color"></i> Swift
+                    </span>
+                </div>
             </div>
             <div class="row align-items-stretch mt-2 edu-container">
                 <span class="col-2 d-flex flex-column justify-content-center text-center edu-school">
                     <i class="icon-mva-alt w-100 fa-2x"></i>
                     <em></em>
                 </span>
-                <span id="presentation-text" class="col-10">
+                <div class="col-10 presentation-text">
                     <h4>Microsoft / MVA</h4>
-                </span>
+                    <span>
+                        <i class="pl-2 icon-server mva-color"></i> Virtualization
+                        <i class="pl-2 icon-webgl mva-color"></i> WebGL
+                        <i class="pl-2 icon-xamarin mva-color"></i> Xamarin
+                        <i class="pl-2 icon-c-sharp mva-color"></i> C#
+                    </span>
+                </div>
             </div>
             <div class="row align-items-stretch mt-2 edu-container">
                 <span class="col-2 d-flex flex-column justify-content-center text-center edu-school">
                     <i class="icon-codeschool w-100 fa-2x"></i>
                     <em></em>
                 </span>
-                <span id="presentation-text" class="col-10">
+                <div class="col-10 presentation-text">
                     <h4>CodeSchool</h4>
-                </span>
+                    <span>
+                        <i class="pl-2 icon-c-sharp codeschool-color"></i> C#
+                        <i class="pl-2 icon-server codeschool-color"></i> JavaScript
+                        <i class="pl-2 icon-css codeschool-color"></i> CSS
+                        <i class="pl-2 fal fa-paint-brush codeschool-color"></i> Design
+                        <i class="pl-2 icon-database codeschool-color"></i> SQL
+                        <i class="pl-2 icon-mongodb codeschool-color"></i> MongoDB
+                        <i class="pl-2 icon-docker codeschool-color"></i> Docker
+                        <i class="pl-2 icon-git codeschool-color"></i> Git
+                        <i class="pl-2 icon-python codeschool-color"></i> Python
+                        <i class="pl-2 icon-laravel codeschool-color"></i> Laravel
+                        <i class="pl-2 icon-r codeschool-color"></i> R
+                    </span>
+                </div>
             </div>
             <div class="row align-items-stretch mt-2 edu-container">
                 <span class="col-2 d-flex flex-column justify-content-center text-center edu-school">
                     <i class="icon-livementor w-100 fa-2x"></i>
                     <em></em>
                 </span>
-                <span id="presentation-text" class="col-10">
-                    <h4>LiveMentor</h4>
-                </span>
+                <div class="col-10 presentation-text">
+                    <h4>Digital &amp; Web Marketing @ LiveMentor</h4>
+                    <span>
+                        <i class="pl-2 fab fa-searchengin livementor-color"></i> SEO
+                        <i class="pl-2 fal fa-arrows-alt-h livementor-color"></i> Tests A/B
+                        <i class="pl-2 icon-google-analytics livementor-color"></i> Google Analytics
+                        <i class="pl-2 fal fa-paint-brush livementor-color"></i> Design
+                    </span>
+                </div>
             </div>
         </div>
         <div id="skills">
             <h4 class="text-center mb-4 col-12 sectionTitle"><i class="fal fa-code"></i> Skills</h4>
             <div class="row align-items-stretch mt-2 skill-container">
                 <span class="col-2 d-flex flex-column justify-content-center text-center skill">
-                    <i class="fal fa-desktop w-100 fa-2x"></i>
+                    <i class="fal fa-desktop w-100 fa-2x p-2"></i>
                     <em></em>
                 </span>
-                <span id="presentation-text" class="col-10">
+                <div class="col-10 presentation-text">
                     <h4>Front-End</h4>
                     <span>
                         <i class="pl-2 icon-css frontend-color"></i> CSS
@@ -711,28 +844,28 @@
                         <i class="pl-2 icon-typescript frontend-color"></i> TypeScript
                         <i class="pl-2 icon-gulp frontend-color"></i> Gulp
                     </span>
-                </span>
+                </div>
             </div>
             <div class="row align-items-stretch mt-2 skill-container">
                 <span class="col-2 d-flex flex-column justify-content-center text-center skill">
-                    <i class="fal fa-paint-brush w-100 fa-2x"></i>
+                    <i class="fal fa-paint-brush w-100 fa-2x p-2"></i>
                     <em></em>
                 </span>
-                <span id="presentation-text" class="col-10">
+                <div class="col-10 presentation-text">
                     <h4>Design</h4>
                     <span>
                         <i class="pl-2 icon-inkscape design-color"></i> InkScape
                         <i class="pl-2 icon-powerpoint design-color"></i> Powerpoint (<i class="icon-poweruser design-color"></i> Power-User)
                         <i class="pl-2 icon-gimp design-color"></i> Gimp
                     </span>
-                </span>
+                </div>
             </div>
             <div class="row align-items-stretch mt-2 skill-container">
                 <span class="col-2 d-flex flex-column justify-content-center text-center skill">
-                    <i class="fal fa-cogs w-100 fa-2x"></i>
+                    <i class="fal fa-cogs w-100 fa-2x p-2"></i>
                     <em></em>
                 </span>
-                <span id="presentation-text" class="col-10">
+                <div class="col-10 presentation-text">
                     <h4>Back-End</h4>
                     <span>
                         <i class="pl-2 icon-java backend-color"></i> Java / Java EE
@@ -744,14 +877,14 @@
                         <i class="pl-2 icon-nodejs backend-color"></i> NodeJS
                         <i class="pl-2 icon-express backend-color"></i> Express
                     </span>
-                </span>
+                </div>
             </div>
             <div class="row align-items-stretch mt-2 skill-container">
                 <span class="col-2 d-flex flex-column justify-content-center text-center skill">
-                    <i class="fal fa-server w-100 fa-2x"></i>
+                    <i class="fal fa-server w-100 fa-2x p-2"></i>
                     <em></em>
                 </span>
-                <span id="presentation-text" class="col-10">
+                <div class="col-10 presentation-text">
                     <h4>Ops</h4>
                     <span>
                         <i class="pl-2 icon-apache ops-color"></i> Apache
@@ -759,14 +892,14 @@
                         <i class="pl-2 icon-jboss-alt ops-color"></i> JBoss
                         <i class="pl-2 icon-lets-encrypt ops-color"></i> Let's Encrypt
                     </span>
-                </span>
+                </div>
             </div>
             <div class="row align-items-stretch mt-2 skill-container">
                 <span class="col-2 d-flex flex-column justify-content-center text-center skill">
-                    <i class="fal fa-database w-100 fa-2x"></i>
+                    <i class="fal fa-database w-100 fa-2x p-2"></i>
                     <em></em>
                 </span>
-                <span id="presentation-text" class="col-10">
+                <div class="col-10 presentation-text">
                     <h4>Databases</h4>
                     <span>
                         <i class="pl-2 icon-mysql database-color"></i> MySQL
@@ -775,14 +908,14 @@
                         <i class="pl-2 icon-mongodb database-color"></i> MongoDB
                         <i class="pl-2 icon-redis database-color"></i> Redis
                     </span>
-                </span>
+                </div>
             </div>
             <div class="row align-items-stretch mt-2 skill-container">
                 <span class="col-2 d-flex flex-column justify-content-center text-center skill">
-                    <i class="fal fa-microchip w-100 fa-2x"></i>
+                    <i class="fal fa-microchip w-100 fa-2x p-2"></i>
                     <em></em>
                 </span>
-                <span id="presentation-text" class="col-10">
+                <div class="col-10 presentation-text">
                     <h4>Machine Learning / BI / Big Data</h4>
                     <span>
                         <i class="pl-2 icon-hadoop ml-color"></i> Hadoop
@@ -792,19 +925,19 @@
                         <i class="pl-2 icon-qliksense ml-color"></i> QlikSense
                         <i class="pl-2 icon-qlikview ml-color"></i> QlikView
                     </span>
-                </span>
+                </div>
             </div>
             <div class="row align-items-stretch mt-2 skill-container">
                 <span class="col-2 d-flex flex-column justify-content-center text-center skill">
-                    <i class="fal fa-mobile-android w-100 fa-2x"></i>
+                    <i class="fal fa-mobile-android w-100 fa-2x p-2"></i>
                     <em></em>
                 </span>
-                <span id="presentation-text" class="col-10">
+                <div class="col-10 presentation-text">
                     <h4>Mobile</h4>
                     <span>
                         <i class="pl-2 icon-android mobile-color"></i> Android
                     </span>
-                </span>
+                </div>
             </div>
         </div>
         <div id="projects">
@@ -814,41 +947,105 @@
                     <i class="icon-aerosafety w-100 fa-4x"></i>
                     <em></em>
                 </span>
-                <span id="presentation-text" class="col-10">
-                    <h4>AeroSafety</h4>
+                <div class="col-10 presentation-text">
+                    <div>
+                        <h4 class="d-inline-block">AeroSafety</h4>
+                        <a class="pl-2 blackColor" href="https://github.com/BioK03/AeroSafety" target="_blank" title="AeroSafety Github Repository">
+                            <i class="fab fa-github aerosafety-color"></i>
+                        </a>
+                    </div>
                     <div>
                         Ground Personnel Safety Test
+                        <a class="collapsed aerosafety-color project-collapse" data-toggle="collapse" href="#collapseAerosafety" aria-expanded="false" aria-controls="collapseAerosafety"></a>
+                        <div id="collapseAerosafety" class="collapse px-2">
+                            <div class="row mdb-lightbox">
+                                <figure class="col-8 col-lg-6">
+                                    <a href="img/projects/aerosafety_3.png" data-size="1000x558">
+                                        <img src="img/projects/aerosafety_3.png" class="img-fluid z-depth-1" />
+                                    </a>
+                                </figure>
+                                <figure class="col-8 col-lg-6">
+                                    <a href="img/projects/aerosafety_1.png" data-size="1000x475">
+                                        <img src="img/projects/aerosafety_1.png" class="img-fluid z-depth-1" />
+                                    </a>
+                                </figure>
+                            </div>
+                        </div>
                     </div>
-                    <span>
+                    <div>
                         <i class="pl-2 icon-java aerosafety-color"></i> Java EE
                         <i class="pl-2 icon-html aerosafety-color"></i> HTML
                         <i class="pl-2 icon-css aerosafety-color"></i> CSS
                         <i class="pl-2 icon-jquery aerosafety-color"></i> jQuery
                         <i class="pl-2 icon-mdbootstrap aerosafety-color"></i> MDBootstrap
-                    </span>
-                </span>
+                    </div>
+                </div>
             </div>
             <div class="row align-items-stretch mt-2 project-container">
                 <span class="col-2 d-flex flex-column justify-content-center text-center project">
                     <i class="icon-bcfont w-100 fa-4x"></i>
                     <em></em>
                 </span>
-                <span id="presentation-text" class="col-10">
-                    <h4>BC-Font</h4>
+                <div class="col-10 presentation-text">
+                    <div>
+                        <h4 class="d-inline-block">BC-Font</h4>
+                        <a class="pl-2 blackColor" href="https://github.com/BioK03/bc-font" target="_blank" title="BC-Font Github Repository">
+                            <i class="fab fa-github bcfont-color"></i>
+                        </a>
+                        <a class="pl-2 blackColor" href="https://biok03.github.io/bc-font/index.html" target="_blank" title="BC-Font Website">
+                            <i class="fal fa-globe bcfont-color"></i>
+                        </a>
+                    </div>
+                    <div>
+                        The Developer Font with 750+ icons
+                        <a class="collapsed bcfont-color project-collapse" data-toggle="collapse" href="#collapseBCFont" aria-expanded="false" aria-controls="collapseBCFont"></a>
+                        <div id="collapseBCFont" class="collapse px-2">
+                            <div class="row mdb-lightbox">
+                                <figure class="col-8 col-lg-6">
+                                    <a href="img/projects/bcfont_1.png" data-size="800x600">
+                                        <img src="img/projects/bcfont_1.png" class="img-fluid z-depth-1" />
+                                    </a>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
                     <span>
                         <i class="pl-2 icon-fontello bcfont-color"></i> Fontello
                         <i class="pl-2 icon-gimp bcfont-color"></i> Gimp
                         <i class="pl-2 icon-poweruser bcfont-color"></i> PowerUser
                     </span>
-                </span>
+                </div>
             </div>
             <div class="row align-items-stretch mt-2 project-container">
                 <span class="col-2 d-flex flex-column justify-content-center text-center project">
                     <i class="icon-expo w-100 fa-4x"></i>
                     <em></em>
                 </span>
-                <span id="presentation-text" class="col-10">
-                    <h4>EXPO</h4>
+                <div class="col-10 presentation-text">
+                    <div>
+                        <h4 class="d-inline-block">EXPO</h4>
+                        <a class="pl-2 blackColor" href="https://github.com/BioK03/Artwork-Gallery" target="_blank" title="Expo Github Repository">
+                            <i class="fab fa-github expo-color"></i>
+                        </a>
+                    </div>
+                    <div>
+                        Artwork Gallery Management
+                        <a class="collapsed expo-color project-collapse" data-toggle="collapse" href="#collapseExpo" aria-expanded="false" aria-controls="collapseExpo"></a>
+                        <div id="collapseExpo" class="collapse px-2">
+                            <div class="row mdb-lightbox">
+                                <figure class="col-8 col-lg-6">
+                                    <a href="img/projects/expo_1.png" data-size="800x410">
+                                        <img src="img/projects/expo_1.png" class="img-fluid z-depth-1" />
+                                    </a>
+                                </figure>
+                                <figure class="col-8 col-lg-6">
+                                    <a href="img/projects/expo_2.png" data-size="1000x514">
+                                        <img src="img/projects/expo_2.png" class="img-fluid z-depth-1" />
+                                    </a>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
                     <span>
                         <i class="pl-2 icon-java expo-color"></i> Java EE
                         <i class="pl-2 icon-css expo-color"></i> CSS
@@ -856,15 +1053,38 @@
                         <i class="pl-2 icon-bootstrap expo-color"></i> Bootstrap
                         <i class="pl-2 icon-leaflet expo-color"></i> Leaflet
                     </span>
-                </span>
+                </div>
             </div>
             <div class="row align-items-stretch mt-2 project-container">
                 <span class="col-2 d-flex flex-column justify-content-center text-center project">
                     <i class="icon-evento-alt w-100 fa-4x"></i>
                     <em></em>
                 </span>
-                <span id="presentation-text" class="col-10">
-                    <h4>Evento</h4>
+                <div class="col-10 presentation-text">
+                    <div>
+                        <h4 class="d-inline-block">Evento</h4>
+                        <a class="pl-2 blackColor" href="https://github.com/BioK03/multi-rest-project" target="_blank" title="Evento Github Repository">
+                            <i class="fab fa-github evento-color"></i>
+                        </a>
+                    </div>
+                    <div>
+                        Worldwide Public Events
+                        <a class="collapsed evento-color project-collapse" data-toggle="collapse" href="#collapseEvento" aria-expanded="false" aria-controls="collapseEvento"></a>
+                        <div id="collapseEvento" class="collapse px-2">
+                            <div class="row mdb-lightbox">
+                                <figure class="col-8 col-lg-6">
+                                    <a href="img/projects/evento_1.png" data-size="800x411">
+                                        <img src="img/projects/evento_1.png" class="img-fluid z-depth-1" />
+                                    </a>
+                                </figure>
+                                <figure class="col-8 col-lg-6">
+                                    <a href="img/projects/evento_2.png" data-size="1000x513">
+                                        <img src="img/projects/evento_2.png" class="img-fluid z-depth-1" />
+                                    </a>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
                     <span>
                         <i class="pl-2 icon-express evento-color"></i> Express
                         <i class="pl-2 icon-asp evento-color"></i> ASP.net
@@ -876,28 +1096,75 @@
                         <i class="pl-2 icon-angular evento-color"></i> Angular
                         <i class="pl-2 icon-leaflet evento-color"></i> Leaflet
                     </span>
-                </span>
+                </div>
             </div>
             <div class="row align-items-stretch mt-2 project-container">
                 <span class="col-2 d-flex flex-column justify-content-center text-center project">
                     <i class="icon-jsonimate-alt w-100 fa-4x"></i>
                     <em></em>
                 </span>
-                <span id="presentation-text" class="col-10">
-                    <h4>JSONimate</h4>
+                <div class="col-10 presentation-text">
+                    <div>
+                        <h4 class="d-inline-block">JSONimate</h4>
+                        <a class="pl-2 blackColor" href="https://github.com/BioK03/jsonimate" target="_blank" title="JSONimate Github Repository">
+                            <i class="fab fa-github jsonimate-color"></i>
+                        </a>
+                        <a class="pl-2 blackColor" href="https://biok03.github.io/jsonimate/" target="_blank" title="JSONimate Website">
+                            <i class="fal fa-globe jsonimate-color"></i>
+                        </a>
+                    </div>
+                    <div>
+                        2D Minimalist jQuery Engine
+                        <a class="collapsed jsonimate-color project-collapse" data-toggle="collapse" href="#collapseJsonimate" aria-expanded="false" aria-controls="collapseJsonimate"></a>
+                        <div id="collapseJsonimate" class="collapse px-2">
+                            <div class="row mdb-lightbox">
+                                <figure class="col-8 col-lg-6">
+                                    <a href="img/projects/jsonimate_1.png" data-size="1000x513">
+                                        <img src="img/projects/jsonimate_1.png" class="img-fluid z-depth-1" />
+                                    </a>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
                     <span>
-                        <i class="pl-2 icon-javascript jsonimate-color"></i> JavaScript
+                        <i class="pl-2 icon-jquery jsonimate-color"></i> jQuery
                         <i class="pl-2 icon-json jsonimate-color"></i> JSON
                     </span>
-                </span>
+                </div>
             </div>
             <div class="row align-items-stretch mt-2 project-container">
                 <span class="col-2 d-flex flex-column justify-content-center text-center project">
                     <i class="icon-velov-alt w-100 fa-4x"></i>
                     <em></em>
                 </span>
-                <span id="presentation-text" class="col-10">
-                    <h4>BI - Velov</h4>
+                <div class="col-10 presentation-text">
+                    <div>
+                        <h4 class="d-inline-block">BI - Velov</h4>
+                        <a class="pl-2 blackColor" href="https://github.com/BioK03/bi-velov/" target="_blank" title="BI-Velov Github Repository">
+                            <i class="fab fa-github velov-color"></i>
+                        </a>
+                        <a class="pl-2 blackColor" href="https://biok03.github.io/bi-velov/" target="_blank" title="BI-Velov Website">
+                            <i class="fal fa-globe velov-color"></i>
+                        </a>
+                    </div>
+                    <div>
+                        Deep Analysis of French Renting Bike Company
+                        <a class="collapsed velov-color project-collapse" data-toggle="collapse" href="#collapseVelov" aria-expanded="false" aria-controls="collapseVelov"></a>
+                        <div id="collapseVelov" class="collapse px-2">
+                            <div class="row mdb-lightbox">
+                                <figure class="col-8 col-lg-6">
+                                    <a href="img/projects/velov_1.png" data-size="1000x512">
+                                        <img src="img/projects/velov_1.png" class="img-fluid z-depth-1" />
+                                    </a>
+                                </figure>
+                                <figure class="col-8 col-lg-6">
+                                    <a href="img/projects/velov_2.png" data-size="1000x512">
+                                        <img src="img/projects/velov_2.png" class="img-fluid z-depth-1" />
+                                    </a>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
                     <span>
                         <i class="pl-2 icon-css velov-color"></i> CSS
                         <i class="pl-2 icon-jquery velov-color"></i> jQuery
@@ -907,15 +1174,38 @@
                         <i class="pl-2 icon-talend-alt velov-color"></i> Talend ETL
                         <i class="pl-2 icon-qliksense velov-color"></i> QlikSense
                     </span>
-                </span>
+                </div>
             </div>
             <div class="row align-items-stretch mt-2 project-container">
                 <span class="col-2 d-flex flex-column justify-content-center text-center project">
                     <i class="icon-bmw w-100 fa-4x"></i>
                     <em></em>
                 </span>
-                <span id="presentation-text" class="col-10">
-                    <h4>BMW car configurator</h4>
+                <div class="col-10 presentation-text">
+                    <div>
+                        <h4 class="d-inline-block">BMW Car Configurator</h4>
+                        <a class="pl-2 blackColor" href="https://github.com/BioK03/car-configurator/" target="_blank" title="Car Configurator Github Repository">
+                            <i class="fab fa-github bmw-color"></i>
+                        </a>
+                    </div>
+                    <div>
+                        Complete Car Configurator
+                        <a class="collapsed bmw-color project-collapse" data-toggle="collapse" href="#collapseBmw" aria-expanded="false" aria-controls="collapseBmw"></a>
+                        <div id="collapseBmw" class="collapse px-2">
+                            <div class="row mdb-lightbox">
+                                <figure class="col-8 col-lg-6">
+                                    <a href="img/projects/bmw_1.png" data-size="1000x513">
+                                        <img src="img/projects/bmw_1.png" class="img-fluid z-depth-1" />
+                                    </a>
+                                </figure>
+                                <figure class="col-8 col-lg-6">
+                                    <a href="img/projects/bmw_2.png" data-size="1000x513">
+                                        <img src="img/projects/bmw_2.png" class="img-fluid z-depth-1" />
+                                    </a>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
                     <span>
                         <i class="pl-2 icon-css bmw-color"></i> CSS
                         <i class="pl-2 icon-jquery bmw-color"></i> jQuery
@@ -923,30 +1213,71 @@
                         <i class="pl-2 icon-flask bmw-color"></i> Python / Flask
                         <i class="pl-2 icon-sqlite bmw-color"></i> SQLite
                     </span>
-                </span>
+                </div>
             </div>
             <div class="row align-items-stretch mt-2 project-container">
                 <span class="col-2 d-flex flex-column justify-content-center text-center project">
                     <i class="icon-studies w-100 fa-4x"></i>
                     <em></em>
                 </span>
-                <span id="presentation-text" class="col-10">
-                    <h4>RTE Studies</h4>
+                <div class="col-10 presentation-text">
+                    <div>
+                        <h4 class="d-inline-block">RTE Studies</h4>
+                        <a class="pl-2 blackColor" href="https://biok03.github.io/studies/" target="_blank" title="RTE Studies Website">
+                            <i class="fal fa-globe studies-color"></i>
+                        </a>
+                    </div>
+                    <div>
+                        Strong Analysis of French Electricity Production, Distribution and Consumption
+                        <a class="collapsed studies-color project-collapse" data-toggle="collapse" href="#collapseStudies" aria-expanded="false" aria-controls="collapseStudies"></a>
+                        <div id="collapseStudies" class="collapse px-2">
+                            <div class="row mdb-lightbox">
+                                <figure class="col-8 col-lg-6">
+                                    <a href="img/projects/rte_1.png" data-size="1000x513">
+                                        <img src="img/projects/rte_1.png" class="img-fluid z-depth-1" />
+                                    </a>
+                                </figure>
+                                <figure class="col-8 col-lg-6">
+                                    <a href="img/projects/rte_2.png" data-size="1000x513">
+                                        <img src="img/projects/rte_2.png" class="img-fluid z-depth-1" />
+                                    </a>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
                     <span>
                         <i class="pl-2 icon-css studies-color"></i> CSS
                         <i class="pl-2 icon-jquery studies-color"></i> jQuery
                         <i class="pl-2 icon-mdbootstrap studies-color"></i> MDBootstrap
                         <i class="pl-2 icon-leaflet studies-color"></i> Leaflet
                     </span>
-                </span>
+                </div>
             </div>
             <div class="row align-items-stretch mt-2 project-container">
                 <span class="col-2 d-flex flex-column justify-content-center text-center project">
                     <i class="icon-myachievements w-100 fa-4x"></i>
                     <em></em>
                 </span>
-                <span id="presentation-text" class="col-10">
-                    <h4>My Achievements</h4>
+                <div class="col-10 presentation-text">
+                    <div>
+                        <h4 class="d-inline-block">My Achievements</h4>
+                        <a class="pl-2 blackColor" href="https://github.com/My-Achievements" target="_blank" title="My Achievements Github Repositories">
+                            <i class="fab fa-github myachievements-color"></i>
+                        </a>
+                    </div>
+                    <div>
+                        Professional and Personal Social Network based on Projects and Achievements
+                        <a class="collapsed myachievements-color project-collapse" data-toggle="collapse" href="#collapseMa" aria-expanded="false" aria-controls="collapseMa"></a>
+                        <div id="collapseMa" class="collapse px-2">
+                            <div class="row mdb-lightbox">
+                                <figure class="col-8 col-lg-6">
+                                    <a href="img/projects/myachievements_1.png" data-size="1000x513">
+                                        <img src="img/projects/myachievements_1.png" class="img-fluid z-depth-1" />
+                                    </a>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
                     <span>
                         <i class="pl-2 icon-sass myachievements-color"></i> Sass
                         <i class="pl-2 icon-typescript myachievements-color"></i> TypeScript
@@ -955,26 +1286,52 @@
                         <i class="pl-2 icon-android myachievements-color"></i> Android
                         <i class="pl-2 icon-windev-alt myachievements-color"></i> WD Mobile
                     </span>
-                </span>
+                </div>
             </div>
             <div class="row align-items-stretch mt-2 project-container">
                 <span class="col-2 d-flex flex-column justify-content-center text-center project">
                     <i class="icon-pdt w-100 fa-4x"></i>
                     <em></em>
                 </span>
-                <span id="presentation-text" class="col-10">
-                    <h4>Produits du Tiroir</h4>
+                <div class="col-10 presentation-text">
+                    <div>
+                        <h4 class="d-inline-block">Produits du tiroir</h4>
+                        <a class="pl-2 blackColor" href="https://github.com/Produits-du-Tiroir" target="_blank" title="Produits du Tiroir Github Repositories">
+                            <i class="fab fa-github pdt-color"></i>
+                        </a>
+                        <a class="pl-2 blackColor" href="http://chbe.fr/pdt/" target="_blank" title="Produits du Tiroir Website">
+                            <i class="fal fa-globe pdt-color"></i>
+                        </a>
+                    </div>
+                    <div>
+                        Web Marketing Strategy on Terroir's products French Distribution Website
+                        <a class="collapsed pdt-color project-collapse" data-toggle="collapse" href="#collapsePdt" aria-expanded="false" aria-controls="collapsePdt"></a>
+                        <div id="collapsePdt" class="collapse px-2">
+                            <div class="row mdb-lightbox">
+                                <figure class="col-8 col-lg-6">
+                                    <a href="img/projects/pdt_1.png" data-size="1000x513">
+                                        <img src="img/projects/pdt_1.png" class="img-fluid z-depth-1" />
+                                    </a>
+                                </figure>
+                                <figure class="col-8 col-lg-6">
+                                    <a href="img/projects/pdt_2.png" data-size="1000x565">
+                                        <img src="img/projects/pdt_2.png" class="img-fluid z-depth-1" />
+                                    </a>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
                     <span>
                         <i class="pl-2 icon-wordpress pdt-color"></i> WordPress
                         <i class="pl-2 icon-prestashop pdt-color"></i> Prestashop
                         <i class="pl-2 icon-mysql pdt-color"></i> MySQL
                         <i class="pl-2 icon-google-analytics pdt-color"></i> Analytics
                     </span>
-                </span>
+                </div>
             </div>
         </div>
         <div id="contact">
-            <form class="row">
+            <div class="row">
                 <h4 class="text-center mb-4 col-12 sectionTitle"><i class="fal fa-envelope"></i> Contact me!</h4>
                 <div class="md-form col-sm-6">
                     <i class="fal fa-user-alt prefix color"></i>
@@ -994,9 +1351,9 @@
                     <label for="materialFormContactMessageEx">Your message</label>
                 </div>
                 <div class="text-center mt-4 col-12">
-                    <button class="btn btn-outline bg-color" type="submit">Send<i class="fal fa-paper-plane ml-2"></i></button>
+                    <span class="btn btn-outline bg-color">Send<i class="fal fa-paper-plane ml-2"></i></span>
                 </div>
-            </form>
+            </div>
         </div>
     </section>
 
@@ -1033,35 +1390,41 @@
     
         <div class="container mt-5 mb-4 text-center text-md-left">
             <div class="row mt-3">
-                <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
-                    <h6 class="text-uppercase font-weight-bold"><strong>Company name</strong></h6>
+                <div class="col-6 mb-4">
+                    <h6 class="text-uppercase font-weight-bold"><strong>External Links</strong></h6>
                     <hr class="bg-color mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                    <p>Here you can use rows and columns here to organize your footer content. Lorem ipsum dolor sit
-                        amet, consectetur adipisicing elit.</p>
+                    <div class="row">
+                        <div class="col-6">
+                            <p><a target="_blank" href="https://biok03.github.io/bc-font/index.html">BC-Font</a></p>
+                            <p><a target="_blank" href="https://biok03.github.io/studies/">RTE Studies</a></p>
+                            <p><a target="_blank" href="https://biok03.github.io/bi-velov/">Velov</a></p>
+                            <p><a target="_blank" href="https://biok03.github.io/js-native-apis/">JS Native APIs</a></p>
+                        </div>
+                        <div class="col-6">
+                            <p><a target="_blank" href="https://biok03.github.io/jsonimate/">JSONimate</a></p>
+                            <p><a target="_blank" href="https://biok03.github.io/MeetUpEventPlanner/">Meet-up Event Planner</a></p>
+                            <p><a target="_blank" href="https://biok03.github.io/Cards/?get=1,2,3,4,5,6">Cards</a></p>
+                            <p><a target="_blank" href="http://crazytips.info/">Crazy Tips</a></p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                    <h6 class="text-uppercase font-weight-bold"><strong>Products</strong></h6>
+                <div class="col-6 mx-auto mb-4">
+                    <h6 class="text-uppercase font-weight-bold"><strong>Internal links</strong></h6>
                     <hr class="bg-color mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                    <p><a href="#!">MDBootstrap</a></p>
-                    <p><a href="#!">MDWordPress</a></p>
-                    <p><a href="#!">BrandFlow</a></p>
-                    <p><a href="#!">Bootstrap Angular</a></p>
-                </div>
-                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                    <h6 class="text-uppercase font-weight-bold"><strong>Useful links</strong></h6>
-                    <hr class="bg-color mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                    <p><a href="#!">Your Account</a></p>
-                    <p><a href="#!">Become an Affiliate</a></p>
-                    <p><a href="#!">Shipping Rates</a></p>
-                    <p><a href="#!">Help</a></p>
-                </div>
-                <div class="col-md-4 col-lg-3 col-xl-3">
-                    <h6 class="text-uppercase font-weight-bold"><strong>Contact</strong></h6>
-                    <hr class="bg-color mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                    <p><i class="fa fa-home mr-3"></i> New York, NY 10012, US</p>
-                    <p><i class="fa fa-envelope mr-3"></i> info@example.com</p>
-                    <p><i class="fa fa-phone mr-3"></i> + 01 234 567 88</p>
-                    <p><i class="fa fa-print mr-3"></i> + 01 234 567 89</p>
+                    <div class="row">
+                        <div class="col-6">
+                            <p><a target="_blank" href="http://smartpen.chbe.fr/">SmartPen</a></p>
+                            <p><a target="_blank" href="http://optidis.chbe.fr/">OptiDis</a></p>
+                            <p><a target="_blank" href="http://chbe.fr/pdt">Produits du Tiroir</a></p>
+                            <p><a target="_blank" href="http://velov.chbe.fr/">Velov</a></p>
+                        </div>
+                        <div class="col-6">
+                            <p><a target="_blank" href="http://chbe.fr/archives/">Archives</a></p>
+                            <p><a target="_blank" href="http://chbe.fr/cluster/">Cluster</a></p>
+                            <p><a target="_blank" href="http://chbe.fr/menu/">Menu</a></p>
+                            <p><a target="_blank" href="http://chbe.fr/Certificates/">Certificates</a></p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
