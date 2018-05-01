@@ -1,4 +1,6 @@
-(function() {
+'use strict';
+
+(function () {
     var typed = new Typed('#typed-render', {
         stringsElement: '#typed-strings',
         typeSpeed: 40,
@@ -15,7 +17,7 @@
     new WOW().init();
 
     $(function () {
-        $('[data-toggle="tooltip"]').tooltip()
+        $('[data-toggle="tooltip"]').tooltip();
     });
 
     $(function () {

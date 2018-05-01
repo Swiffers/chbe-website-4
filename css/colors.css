@@ -403,3 +403,11 @@ i[class^='icon-myachievements'] + em {
 i[class^='icon-pdt'] + em {
     background-color: #000000;
 }
+
+.optidis-color, .optidis-color:hover, .optidis-color:active, .optidis-color:focus, .optidis-color:visited {
+    color: #2BBBAD;
+}
+
+i[class^='icon-optidis'] + em {
+    background-color: #2BBBAD;
+}

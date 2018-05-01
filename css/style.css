@@ -35,11 +35,13 @@ body {
 }
 
 .top-nav-collapse {
-    background-color: rgba(76, 110, 245, 0.8);
+    /*background-color: rgba(76, 110, 245, 0.8);*/
+    background-color: rgba(161, 136, 127, 0.9);
 }
 
 .navbar:not(.top-nav-collapse) {
     background: transparent !important;
+    box-shadow: none !important;
 }
 
 .intro {
@@ -77,7 +79,7 @@ section#container {
 }
 
 #presentation img.img-fluid {
-    border-right: 1px solid #4C6EF5;
+    border-right: 1px solid #a1887f;
 }
 
 #contact .md-form .prefix~label {
@@ -85,11 +87,11 @@ section#container {
 }
 
 .bg-color {
-    background-color: #4C6EF5;
+    background-color: #a1887f;
 }
 
 .color {
-    color: #4C6EF5;
+    color: #a1887f;
 }
 
 #experiences .exp-container .exp-company,
@@ -205,6 +207,12 @@ section#container {
     content: "More...";
 }
 
+#experiences .exp-project .desc-exp-project span {
+    background-color: #9E9E9E;
+    color: #FFFFFF;
+    padding: 0.1em;
+}
+
 #contact .btn-outline i {
     color: #FFFFFF;
 }
@@ -221,7 +229,7 @@ section#container {
 #contact .md-form input[type=time]:focus:not([readonly])+label, 
 #contact .md-form input[type=url]:focus:not([readonly])+label, 
 #contact .md-form textarea.md-textarea:focus:not([readonly])+label {
-    color: #4C6EF5;
+    color: #a1887f;
 }
 
 #contact .md-form input[type=date]:focus:not([readonly]), 
@@ -236,13 +244,13 @@ section#container {
 #contact .md-form input[type=time]:focus:not([readonly]), 
 #contact .md-form input[type=url]:focus:not([readonly]), 
 #contact .md-form textarea.md-textarea:focus:not([readonly]) {
-    box-shadow: 0 1px 0 0 #4C6EF5;
-    border-bottom: 1px solid #4C6EF5;
+    box-shadow: 0 1px 0 0 #a1887f;
+    border-bottom: 1px solid #a1887f;
 }
 
 #contact .md-form .prefix,
 #contact .md-form .prefix.active {
-    color: #4C6EF5;
+    color: #a1887f;
 }
 
 @media (max-width: 1200px) {
