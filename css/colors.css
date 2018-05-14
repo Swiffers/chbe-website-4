@@ -268,7 +268,7 @@ i[class^='icon-livementor'] + em {
     background-color: #283339;
 }
 
-.skill i[class^='fal fa-desktop'] + em {
+.skill i[class^='far fa-desktop'] + em {
     background-color: #2962ff;
 }
 
@@ -276,7 +276,7 @@ i[class^='icon-livementor'] + em {
     color: #2962ff;
 }
 
-.skill i[class^='fal fa-paint'] + em {
+.skill i[class^='far fa-paint'] + em {
     background-color: #ff6d00;
 }
 
@@ -284,7 +284,7 @@ i[class^='icon-livementor'] + em {
     color: #ff6d00;
 }
 
-.skill i[class^='fal fa-cogs'] + em {
+.skill i[class^='far fa-cogs'] + em {
     background-color: #00bfa5;
 }
 
@@ -292,7 +292,7 @@ i[class^='icon-livementor'] + em {
     color: #00bfa5;
 }
 
-.skill i[class^='fal fa-server'] + em {
+.skill i[class^='far fa-server'] + em {
     background-color: #ffab00;
 }
 
@@ -300,7 +300,7 @@ i[class^='icon-livementor'] + em {
     color: #ffab00;
 }
 
-.skill i[class^='fal fa-database'] + em {
+.skill i[class^='far fa-database'] + em {
     background-color: #dd2c00;
 }
 
@@ -308,7 +308,7 @@ i[class^='icon-livementor'] + em {
     color: #dd2c00;
 }
 
-.skill i[class^='fal fa-microchip'] + em {
+.skill i[class^='far fa-microchip'] + em {
     background-color: #0091ea;
 }
 
@@ -316,7 +316,7 @@ i[class^='icon-livementor'] + em {
     color: #0091ea;
 }
 
-.skill i[class^='fal fa-mobile'] + em {
+.skill i[class^='far fa-mobile'] + em {
     background-color: #00c853;
 }
 
