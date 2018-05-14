@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'bc-font';
-  src: url('../font/bc-font/bc-font.eot?6453951');
-  src: url('../font/bc-font/bc-font.eot?6453951#iefix') format('embedded-opentype'),
-       url('../font/bc-font/bc-font.woff2?6453951') format('woff2'),
-       url('../font/bc-font/bc-font.woff?6453951') format('woff'),
-       url('../font/bc-font/bc-font.ttf?6453951') format('truetype'),
-       url('../font/bc-font/bc-font.svg?6453951#bc-font') format('svg');
+  src: url('../font/bc-font/bc-font.eot');
+  src: url('../font/bc-font/bc-font.eot#iefix') format('embedded-opentype'),
+       url('../font/bc-font/bc-font.woff2') format('woff2'),
+       url('../font/bc-font/bc-font.woff') format('woff'),
+       url('../font/bc-font/bc-font.ttf') format('truetype'),
+       url('../font/bc-font/bc-font.svg#bc-font') format('svg');
   font-weight: normal;
   font-style: normal;
 }
